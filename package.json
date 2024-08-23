@@ -7,23 +7,25 @@
         "github-actions",
         "actions"
     ],
-    "homepage": "https://github.com/dcastil/report-deploy-to-linear",
-    "bugs": {
-        "url": "https://github.com/dcastil/report-deploy-to-linear/issues"
-    },
     "license": "MIT",
     "author": "Dany Castillo",
-    "files": [
-        "dist",
-        "src"
-    ],
+    "homepage": "https://github.com/dcastil/report-deploy-to-linear",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/dcastil/report-deploy-to-linear.git"
     },
-    "scripts": {
-        "build": "echo \"Error: no build specified\" && exit 1"
+    "bugs": {
+        "url": "https://github.com/dcastil/report-deploy-to-linear/issues"
     },
-    "dependencies": {},
-    "devDependencies": {}
+    "files": [
+        "dist",
+        "src"
+    ],
+    "type": "module",
+    "scripts": {
+        "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --target=node20 --sourcemap"
+    },
+    "devDependencies": {
+        "esbuild": "^0.23.1"
+    }
 }
