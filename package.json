@@ -23,9 +23,11 @@
     ],
     "type": "module",
     "scripts": {
-        "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --target=node20 --sourcemap"
+        "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --target=node20 --sourcemap",
+        "prepare": "husky"
     },
     "devDependencies": {
-        "esbuild": "^0.23.1"
+        "esbuild": "^0.23.1",
+        "husky": "^9.1.5"
     }
 }
