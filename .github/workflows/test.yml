@@ -7,7 +7,25 @@ on:
         branches: ['**']
 
 jobs:
-    test:
+    check-dist-sync:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js 20
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 20.11.1
+            - name: Use node_modules cache
+              uses: actions/cache@v4
+              with:
+                  path: node_modules
+                  key: node-20-${{ hashFiles('package-lock.json') }}
+                  restore-keys: |
+                      node-20-
+            - run: npm install
+            - run: npm run build
+            - run: git diff --exit-code
+    typecheck:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
@@ -24,5 +42,3 @@ jobs:
                       node-20-
             - run: npm install
             - run: npm run typecheck
-            - run: npm run build
-            - run: git diff --exit-code
