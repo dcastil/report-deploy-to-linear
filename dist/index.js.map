@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../src/index.ts"],
-  "sourcesContent": ["helloWorld()\n\nfunction helloWorld() {\n    console.log('Hello World!')\n}\n"],
-  "mappings": ";;;AAAA,WAAW;AAEX,SAAS,aAAa;AAClB,UAAQ,IAAI,cAAc;AAC9B;",
+  "sourcesContent": ["helloWorld()\n\nfunction helloWorld() {\n    console.log('Hello bundled World!')\n}\n"],
+  "mappings": ";;;AAAA,WAAW;AAEX,SAAS,aAAa;AAClB,UAAQ,IAAI,sBAAsB;AACtC;",
   "names": []
 }
