@@ -1,0 +1,19 @@
+name: 'report-deploy-to-linear'
+author: 'Dany Castillo'
+description: 'Report back in Linear issue when associated pull request gets deployed successfully'
+inputs:
+    github-token:
+        description: 'Github token of the repository (automatically created by Github)'
+        default: '${{ github.token }}'
+        required: false
+    workflow-file-name:
+        description: 'Workflow file name or ref that contains deployment job'
+        default: '${{ github.workflow_ref }}'
+        required: false
+    workflow-job-name:
+        description: 'Name of deployment job'
+        default: '${{ github.job }}'
+        required: false
+runs:
+    using: 'node20'
+    main: 'dist/index.js'
