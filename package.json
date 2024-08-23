@@ -1,0 +1,29 @@
+{
+    "name": "report-deploy-to-linear",
+    "version": "0.0.0",
+    "description": "GitHub Action to report back in Linear issue when associated pull request gets deployed successfully",
+    "keywords": [
+        "github",
+        "github-actions",
+        "actions"
+    ],
+    "homepage": "https://github.com/dcastil/report-deploy-to-linear",
+    "bugs": {
+        "url": "https://github.com/dcastil/report-deploy-to-linear/issues"
+    },
+    "license": "MIT",
+    "author": "Dany Castillo",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dcastil/report-deploy-to-linear.git"
+    },
+    "scripts": {
+        "build": "echo \"Error: no build specified\" && exit 1"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}
