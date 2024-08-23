@@ -3,6 +3,6 @@
 // src/index.ts
 helloWorld();
 function helloWorld() {
-  console.log("Hello bundled World!");
+  console.log("Hello world!");
 }
 //# sourceMappingURL=index.js.map

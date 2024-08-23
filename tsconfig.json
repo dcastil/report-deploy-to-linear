@@ -11,7 +11,7 @@
         "module": "ESNext",
         "moduleResolution": "Node",
         // Emit
-        "declaration": true,
+        "declaration": false,
         "noEmit": true,
         "outDir": "types",
         "sourceMap": true,
