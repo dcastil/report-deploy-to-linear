@@ -1,2 +1,10 @@
+# Move unstaged changes to stash
+git stash push --keep-index --include-untracked
+
+# Run build
 npm run build
+# Add built files to staged
 git add dist
+
+# Move unstaged changes back from stash
+git stash pop
