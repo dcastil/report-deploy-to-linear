@@ -6,13 +6,21 @@ inputs:
         description: 'Github token of the repository (automatically created by Github)'
         default: '${{ github.token }}'
         required: false
+    deployed-commit-sha:
+        description: 'The SHA of the commit that got deployed'
+        default: '${{ github.sha }}'
+        required: false
     workflow-file-name:
-        description: 'Workflow file name or ref that contains deployment job'
+        description: 'Workflow file name or workflow ref that contains deployment job'
         default: '${{ github.workflow_ref }}'
         required: false
     workflow-job-name:
         description: 'Name of deployment job'
         default: '${{ github.job }}'
+        required: false
+    dry-run:
+        description: 'Run action without causing any changes'
+        default: false
         required: false
 runs:
     using: 'node20'
