@@ -1,5 +1,6 @@
-helloWorld()
+import { NodeRuntime } from '@effect/platform-node'
+import { Effect } from 'effect'
+import { program } from './program'
+import { ConfigProviderLive } from './services/config-provider'
 
-function helloWorld() {
-    console.log('Hello world!')
-}
+program.pipe(Effect.provide(ConfigProviderLive), NodeRuntime.runMain)
