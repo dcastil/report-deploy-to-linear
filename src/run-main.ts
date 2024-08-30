@@ -1,6 +1,10 @@
 import { NodeRuntime } from '@effect/platform-node'
 import { Cause, Effect, Exit } from 'effect'
 
+export function runMainLive<A, E>(effect: Effect.Effect<A, E>) {
+    return NodeRuntime.runMain(effect)
+}
+
 export function runMainTest<A, E>(effect: Effect.Effect<A, E>) {
     return NodeRuntime.runMain(effect, {
         teardown: (exit) => {

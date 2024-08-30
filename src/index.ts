@@ -1,6 +1,6 @@
-import { NodeRuntime } from '@effect/platform-node'
 import { Effect } from 'effect'
 import { program } from './program'
+import { runMainLive } from './run-main'
 import { ConfigProviderLive } from './services/config-provider'
 
-program.pipe(Effect.provide(ConfigProviderLive), NodeRuntime.runMain)
+program.pipe(Effect.provide(ConfigProviderLive), runMainLive)

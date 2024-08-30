@@ -1,8 +1,8 @@
 import { Effect } from 'effect'
 import { test } from 'vitest'
 import { program } from './program'
+import { runMainTest } from './run-main'
 import { getConfigProviderTest } from './services/config-provider'
-import { runMainTest } from './test-utils'
 
 test('runs without errors', () => {
     program.pipe(
