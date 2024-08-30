@@ -9,7 +9,7 @@
         "strict": true,
         // Modules
         "module": "ESNext",
-        "moduleResolution": "Node",
+        "moduleResolution": "bundler",
         // Emit
         "declaration": false,
         "noEmit": true,
