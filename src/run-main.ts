@@ -1,20 +1,24 @@
 import { NodeRuntime } from '@effect/platform-node'
 import { Cause, Effect, Exit } from 'effect'
+import { ExitError } from './error-handling'
 
-export function runMainLive<A, E>(effect: Effect.Effect<A, E>) {
-    return NodeRuntime.runMain(effect)
+export function runMainLive<A>(effect: Effect.Effect<A, ExitError>) {
+    return NodeRuntime.runMain(effect, { disableErrorReporting: true })
 }
 
-export function runMainTest<A, E>(effect: Effect.Effect<A, E>) {
+export function runMainTest<A>(effect: Effect.Effect<A, ExitError>) {
     return NodeRuntime.runMain(effect, {
+        disableErrorReporting: true,
         teardown: (exit) => {
-            if (Exit.isFailure(exit)) {
-                if (Cause.isFailType(exit.cause)) {
-                    throw exit.cause.error
-                }
-
-                throw new Error(`Unexpected exit with cause: ${exit.cause}`)
+            if (Exit.isSuccess(exit)) {
+                return
             }
+
+            if (Cause.isFailType(exit.cause) && exit.cause.error) {
+                throw exit.cause.error
+            }
+
+            throw exit.cause
         },
     })
 }

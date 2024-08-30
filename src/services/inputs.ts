@@ -1,5 +1,6 @@
 import { Config, ConfigError, Context, Effect, Layer } from 'effect'
 import { isInvalidData, isMissingData } from 'effect/ConfigError'
+import { ExitError } from '../error-handling'
 import { objectEntriesUnsafe } from '../utils'
 
 class Inputs extends Context.Tag('Inputs')<Inputs, Effect.Effect.Success<typeof inputs>>() {}
@@ -25,9 +26,9 @@ const inputs = validateConfig({
 
     isDryRun: Config.boolean('dry-run'),
 }).pipe(
-    Effect.mapError((configErrors) => {
-        const message =
-            [
+    Effect.mapError(
+        (configErrors) =>
+            new ExitError(
                 configErrors.length === 1
                     ? 'There was an error with an input.'
                     : `There were ${configErrors.length} errors with inputs.`,
@@ -42,10 +43,8 @@ const inputs = validateConfig({
 
                     throw new Error(`Unexpected error: ${error}`)
                 }),
-            ].join('\n\n    ') + '\n'
-
-        return new Error(message)
-    }),
+            ),
+    ),
 )
 
 export const InputsLive = Layer.effect(Inputs, inputs)

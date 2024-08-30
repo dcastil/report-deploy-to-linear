@@ -34700,6 +34700,15 @@ var structured = /* @__PURE__ */ replace2(defaultLogger, structuredLogger2);
 var minimumLogLevel2 = minimumLogLevel;
 var isLogger2 = isLogger;
 
+// src/error-handling.ts
+var ExitError = class extends Error {
+  messages;
+  constructor(...messages) {
+    super(messages[0]);
+    this.messages = messages;
+  }
+};
+
 // src/utils.ts
 var objectEntriesUnsafe = Object.entries;
 
@@ -34721,8 +34730,8 @@ var inputs = validateConfig({
   workflowJobName: Config_exports.string("workflow-job-name"),
   isDryRun: Config_exports.boolean("dry-run")
 }).pipe(
-  Effect_exports.mapError((configErrors) => {
-    const message = [
+  Effect_exports.mapError(
+    (configErrors) => new ExitError(
       configErrors.length === 1 ? "There was an error with an input." : `There were ${configErrors.length} errors with inputs.`,
       ...configErrors.map((error) => {
         if (isMissingData2(error)) {
@@ -34733,9 +34742,8 @@ var inputs = validateConfig({
         }
         throw new Error(`Unexpected error: ${error}`);
       })
-    ].join("\n\n    ") + "\n";
-    return new Error(message);
-  })
+    )
+  )
 );
 var InputsLive = Layer_exports.effect(Inputs, inputs);
 function validateConfig(config2) {
@@ -34750,6 +34758,7 @@ function validateConfig(config2) {
 // src/program.ts
 var program = Effect_exports.logInfo("Hello world!").pipe(
   Effect_exports.provide(InputsLive),
+  Effect_exports.tapError((error) => Effect_exports.logFatal(...error.messages)),
   Effect_exports.provide(Logger_exports.pretty)
 );
 
@@ -34798,7 +34807,7 @@ var runMain3 = runMain2;
 
 // src/run-main.ts
 function runMainLive(effect2) {
-  return NodeRuntime_exports.runMain(effect2);
+  return NodeRuntime_exports.runMain(effect2, { disableErrorReporting: true });
 }
 
 // src/services/config-provider.ts
