@@ -1,8 +1,15 @@
+interface ExitErrorParams {
+    title: string
+    messages?: readonly any[]
+}
+
 export class ExitError extends Error {
+    readonly title: string
     readonly messages: readonly any[]
 
-    constructor(...messages: readonly [string, ...any[]]) {
-        super(messages[0])
-        this.messages = messages
+    constructor(params: ExitErrorParams) {
+        super(params.title)
+        this.title = params.title
+        this.messages = params.messages ?? []
     }
 }

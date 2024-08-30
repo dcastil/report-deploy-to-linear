@@ -29,11 +29,12 @@ const inputs = validateConfig({
     Effect.tap((inputs) => Effect.logDebug('Inputs', inputs)),
     Effect.mapError(
         (configErrors) =>
-            new ExitError(
-                configErrors.length === 1
-                    ? 'There was an error with an input.'
-                    : `There were ${configErrors.length} errors with inputs.`,
-                ...configErrors.map((error) => {
+            new ExitError({
+                title:
+                    configErrors.length === 1
+                        ? 'There was an error with an input'
+                        : `There were ${configErrors.length} errors with inputs`,
+                messages: configErrors.map((error) => {
                     if (isMissingData(error)) {
                         return `Input "${error.path.join('-')}" is missing`
                     }
@@ -44,7 +45,7 @@ const inputs = validateConfig({
 
                     throw new Error(`Unexpected error: ${error}`)
                 }),
-            ),
+            }),
     ),
 )
 

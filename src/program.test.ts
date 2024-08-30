@@ -35,5 +35,5 @@ test('throws an error on missing inputs', () => {
             Logger.withMinimumLogLevel(LogLevel.None),
             Effect.runSync,
         ),
-    ).toThrowError('There was an error with an input.')
+    ).toThrowError('There was an error with an input')
 })

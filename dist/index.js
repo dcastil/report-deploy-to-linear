@@ -34702,10 +34702,12 @@ var isLogger2 = isLogger;
 
 // src/error-handling.ts
 var ExitError = class extends Error {
+  title;
   messages;
-  constructor(...messages) {
-    super(messages[0]);
-    this.messages = messages;
+  constructor(params) {
+    super(params.title);
+    this.title = params.title;
+    this.messages = params.messages ?? [];
   }
 };
 
@@ -34732,9 +34734,9 @@ var inputs = validateConfig({
 }).pipe(
   Effect_exports.tap((inputs2) => Effect_exports.logDebug("Inputs", inputs2)),
   Effect_exports.mapError(
-    (configErrors) => new ExitError(
-      configErrors.length === 1 ? "There was an error with an input." : `There were ${configErrors.length} errors with inputs.`,
-      ...configErrors.map((error) => {
+    (configErrors) => new ExitError({
+      title: configErrors.length === 1 ? "There was an error with an input" : `There were ${configErrors.length} errors with inputs`,
+      messages: configErrors.map((error) => {
         if (isMissingData2(error)) {
           return `Input "${error.path.join("-")}" is missing`;
         }
@@ -34743,7 +34745,7 @@ var inputs = validateConfig({
         }
         throw new Error(`Unexpected error: ${error}`);
       })
-    )
+    })
   )
 );
 var InputsLive = Layer_exports.effect(Inputs, inputs);
@@ -34757,9 +34759,9 @@ function validateConfig(config2) {
 }
 
 // src/program.ts
-var program = Effect_exports.logInfo("Hello world!").pipe(
+var program = Effect_exports.void.pipe(
   Effect_exports.provide(InputsLive),
-  Effect_exports.tapError((error) => Effect_exports.logFatal(...error.messages)),
+  Effect_exports.tapError((error) => Effect_exports.logFatal(error.title, ...error.messages)),
   Effect_exports.provide(Logger_exports.pretty)
 );
 
