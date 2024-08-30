@@ -30,26 +30,23 @@ export const InputsLive = Layer.effect(
     Inputs,
     inputs.pipe(
         Effect.mapError((configErrors) => {
-            if (configErrors.length === 1) {
-                return new Error('')
-            }
+            const message =
+                [
+                    configErrors.length === 1
+                        ? 'There was an error with an input.'
+                        : `There were ${configErrors.length} errors with inputs.`,
+                    ...configErrors.map((error) => {
+                        if (isMissingData(error)) {
+                            return `Input "${error.path.join('-')}" is missing`
+                        }
 
-            const message = [
-                configErrors.length === 1
-                    ? 'There was an error with an input.'
-                    : `There were ${configErrors.length} errors with inputs.`,
-                ...configErrors.map((error) => {
-                    if (isMissingData(error)) {
-                        return `Input "${error.path.join('-')}" is missing`
-                    }
+                        if (isInvalidData(error)) {
+                            return `Input "${error.path.join('-')}" is invalid: ${error.message}`
+                        }
 
-                    if (isInvalidData(error)) {
-                        return `Input "${error.path.join('-')}" is invalid: ${error.message}`
-                    }
-
-                    throw new Error(`Unexpected error: ${error}`)
-                }),
-            ].join('\n\n')
+                        throw new Error(`Unexpected error: ${error}`)
+                    }),
+                ].join('\n\n    ') + '\n'
 
             return new Error(message)
         }),

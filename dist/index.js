@@ -34338,9 +34338,6 @@ var InputsLive = Layer_exports.effect(
   Inputs,
   inputs.pipe(
     Effect_exports.mapError((configErrors) => {
-      if (configErrors.length === 1) {
-        return new Error("");
-      }
       const message = [
         configErrors.length === 1 ? "There was an error with an input." : `There were ${configErrors.length} errors with inputs.`,
         ...configErrors.map((error) => {
@@ -34352,7 +34349,7 @@ var InputsLive = Layer_exports.effect(
           }
           throw new Error(`Unexpected error: ${error}`);
         })
-      ].join("\n\n");
+      ].join("\n\n    ") + "\n";
       return new Error(message);
     })
   )
