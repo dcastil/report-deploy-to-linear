@@ -6,7 +6,3 @@ export class ExitError extends Error {
         this.messages = messages
     }
 }
-
-export function isExitError(error: unknown): error is ExitError {
-    return error instanceof ExitError
-}

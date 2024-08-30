@@ -26,6 +26,7 @@ const inputs = validateConfig({
 
     isDryRun: Config.boolean('dry-run'),
 }).pipe(
+    Effect.tap((inputs) => Effect.logDebug('Inputs', inputs)),
     Effect.mapError(
         (configErrors) =>
             new ExitError(

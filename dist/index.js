@@ -34730,6 +34730,7 @@ var inputs = validateConfig({
   workflowJobName: Config_exports.string("workflow-job-name"),
   isDryRun: Config_exports.boolean("dry-run")
 }).pipe(
+  Effect_exports.tap((inputs2) => Effect_exports.logDebug("Inputs", inputs2)),
   Effect_exports.mapError(
     (configErrors) => new ExitError(
       configErrors.length === 1 ? "There was an error with an input." : `There were ${configErrors.length} errors with inputs.`,

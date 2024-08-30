@@ -1,4 +1,4 @@
-import { Effect } from 'effect'
+import { Effect, Logger, LogLevel } from 'effect'
 import { expect, test } from 'vitest'
 import { program } from './program'
 import { runMainTest } from './run-main'
@@ -32,6 +32,7 @@ test('throws an error on missing inputs', () => {
                     'workflow-job-name': 'my-job',
                 }),
             ),
+            Logger.withMinimumLogLevel(LogLevel.None),
             Effect.runSync,
         ),
     ).toThrowError('There was an error with an input.')
