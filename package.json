@@ -23,6 +23,7 @@
     ],
     "type": "module",
     "scripts": {
+        "test": "vitest",
         "typecheck": "tsc --noEmit",
         "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --target=node20 --sourcemap",
         "prepare": "husky"
@@ -35,6 +36,7 @@
         "esbuild": "^0.23.1",
         "husky": "^9.1.5",
         "prettier": "^3.3.3",
-        "typescript": "^5.5.4"
+        "typescript": "^5.5.4",
+        "vitest": "^2.0.5"
     }
 }

@@ -50,3 +50,7 @@ const githubActionConfigProvider = ConfigProvider.fromFlat(
 )
 
 export const ConfigProviderLive = Layer.setConfigProvider(githubActionConfigProvider)
+
+export function getConfigProviderTest(json: object) {
+    return Layer.setConfigProvider(ConfigProvider.fromJson(json))
+}
