@@ -34333,27 +34333,24 @@ var inputs = validateConfig({
   ),
   workflowJobName: Config_exports.string("workflow-job-name"),
   isDryRun: Config_exports.boolean("dry-run")
-});
-var InputsLive = Layer_exports.effect(
-  Inputs,
-  inputs.pipe(
-    Effect_exports.mapError((configErrors) => {
-      const message = [
-        configErrors.length === 1 ? "There was an error with an input." : `There were ${configErrors.length} errors with inputs.`,
-        ...configErrors.map((error) => {
-          if (isMissingData2(error)) {
-            return `Input "${error.path.join("-")}" is missing`;
-          }
-          if (isInvalidData2(error)) {
-            return `Input "${error.path.join("-")}" is invalid: ${error.message}`;
-          }
-          throw new Error(`Unexpected error: ${error}`);
-        })
-      ].join("\n\n    ") + "\n";
-      return new Error(message);
-    })
-  )
+}).pipe(
+  Effect_exports.mapError((configErrors) => {
+    const message = [
+      configErrors.length === 1 ? "There was an error with an input." : `There were ${configErrors.length} errors with inputs.`,
+      ...configErrors.map((error) => {
+        if (isMissingData2(error)) {
+          return `Input "${error.path.join("-")}" is missing`;
+        }
+        if (isInvalidData2(error)) {
+          return `Input "${error.path.join("-")}" is invalid: ${error.message}`;
+        }
+        throw new Error(`Unexpected error: ${error}`);
+      })
+    ].join("\n\n    ") + "\n";
+    return new Error(message);
+  })
 );
+var InputsLive = Layer_exports.effect(Inputs, inputs);
 function validateConfig(config2) {
   const entries2 = objectEntriesUnsafe(config2);
   return Effect_exports.validateAll(entries2, (entry) => entry[1]).pipe(
