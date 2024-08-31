@@ -39049,7 +39049,15 @@ var githubClient = Inputs.pipe(
           ...inputs2.workflowRepository,
           run_id: runId
         }),
-        catch: transformToActionError("Could not list jobs for workflow run")
+        catch: transformToActionError(`Could not list jobs for workflow run ${runId}`)
+      }),
+      compareCommits: (base, head5) => Effect_exports.tryPromise({
+        try: () => octokit.rest.repos.compareCommits({
+          ...inputs2.workflowRepository,
+          base,
+          head: head5
+        }),
+        catch: transformToActionError(`Could not compare commits ${base}...${head5}`)
       })
     };
   })
