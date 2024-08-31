@@ -39030,7 +39030,7 @@ var ConfigProviderLive = Layer_exports.setConfigProvider(githubActionConfigProvi
 
 // src/services/github-client.ts
 var import_github = __toESM(require_github(), 1);
-var GithubClient = class extends Context_exports.Tag("Inputs")() {
+var GithubClient = class extends Context_exports.Tag("GithubClient")() {
 };
 var githubClient = Inputs.pipe(
   Effect_exports.andThen((inputs2) => {
@@ -39052,12 +39052,19 @@ var githubClient = Inputs.pipe(
         catch: transformToActionError(`Could not list jobs for workflow run ${runId}`)
       }),
       compareCommits: (base, head5) => Effect_exports.tryPromise({
-        try: () => octokit.rest.repos.compareCommits({
+        try: () => octokit.rest.repos.compareCommitsWithBasehead({
           ...inputs2.workflowRepository,
-          base,
-          head: head5
+          basehead: `${base}...${head5}`
         }),
         catch: transformToActionError(`Could not compare commits ${base}...${head5}`)
+      }),
+      listCommits: (sha, perPage) => Effect_exports.tryPromise({
+        try: () => octokit.rest.repos.listCommits({
+          ...inputs2.workflowRepository,
+          sha,
+          per_page: perPage
+        }),
+        catch: transformToActionError(`Could not list commits for SHA ${sha}`)
       })
     };
   })
