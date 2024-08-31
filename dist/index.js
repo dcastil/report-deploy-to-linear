@@ -39035,10 +39035,34 @@ var GithubClient = class extends Context_exports.Tag("Inputs")() {
 var githubClient = Inputs.pipe(
   Effect_exports.andThen((inputs2) => {
     const octokit = import_github.default.getOctokit(Redacted_exports.value(inputs2.githubToken));
-    return {};
+    return {
+      listWorkflowRuns: () => Effect_exports.tryPromise({
+        try: () => octokit.rest.actions.listWorkflowRuns({
+          ...inputs2.workflowRepository,
+          workflow_id: inputs2.workflowFileName
+        }),
+        catch: transformToActionError("Could not list workflow runs")
+      })
+    };
   })
 );
 var GithubClientLive = Layer_exports.effect(GithubClient, githubClient);
+function transformToActionError(title) {
+  return (error) => {
+    if (error instanceof Error) {
+      return new ActionError({
+        title,
+        messages: [error.message],
+        cause: error
+      });
+    }
+    return new ActionError({
+      title,
+      messages: [error],
+      cause: error
+    });
+  };
+}
 
 // src/index.ts
 createProgram({
