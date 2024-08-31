@@ -1,9 +1,17 @@
-import { Effect, Logger } from 'effect'
-import { ExitError } from './error-handling'
+import { Effect } from 'effect'
+import { FatalError } from './error-handling'
 import { InputsLive } from './services/inputs'
+import { LoggerLive } from './services/logger'
 
 export const program = Effect.void.pipe(
     Effect.provide(InputsLive),
-    Effect.tapError((error: ExitError) => Effect.logFatal(error.title, ...error.messages)),
-    Effect.provide(Logger.pretty),
+    Effect.tapBoth({
+        onSuccess: () => Effect.logInfo('Action completed successfully'),
+        onFailure: (error: FatalError) =>
+            Effect.logFatal(error.title, ...error.messages).pipe(
+                Effect.andThen(Effect.logInfo('Action aborted')),
+            ),
+    }),
+    Effect.tapDefect((defect) => Effect.logFatal('Action died unexpectedly', defect)),
+    Effect.provide(LoggerLive),
 )

@@ -1,4 +1,4 @@
-import { Effect, Logger, LogLevel } from 'effect'
+import { Effect } from 'effect'
 import { expect, test } from 'vitest'
 import { program } from './program'
 import { runMainTest } from './run-main'
@@ -14,6 +14,7 @@ test('runs without errors', () => {
                     'octocat/hello-world/.github/workflows/my-workflow.yml@refs/heads/my_branch',
                 'workflow-job-name': 'my-job',
                 'dry-run': true,
+                'log-level': 'info',
             }),
         ),
         runMainTest,
@@ -30,10 +31,10 @@ test('throws an error on missing inputs', () => {
                     'workflow-file-name':
                         'octocat/hello-world/.github/workflows/my-workflow.yml@refs/heads/my_branch',
                     'workflow-job-name': 'my-job',
+                    'log-level': 'off',
                 }),
             ),
-            Logger.withMinimumLogLevel(LogLevel.None),
             Effect.runSync,
         ),
-    ).toThrowError('There was an error with an input')
+    ).toThrowError('There was a fatal error with an input')
 })

@@ -19909,7 +19909,10 @@ var isNonEmptyArray = (self2) => self2.length > 0;
 var make2 = (compare) => (self2, that) => self2 === that ? 0 : compare(self2, that);
 var number2 = /* @__PURE__ */ make2((self2, that) => self2 < that ? -1 : 1);
 var mapInput2 = /* @__PURE__ */ dual(2, (self2, f) => make2((b1, b2) => self2(f(b1), f(b2))));
+var lessThan = (O) => dual(2, (self2, that) => O(self2, that) === -1);
 var greaterThan = (O) => dual(2, (self2, that) => O(self2, that) === 1);
+var lessThanOrEqualTo = (O) => dual(2, (self2, that) => O(self2, that) !== 1);
+var greaterThanOrEqualTo = (O) => dual(2, (self2, that) => O(self2, that) !== -1);
 
 // node_modules/effect/dist/esm/Option.js
 var none2 = () => none;
@@ -20876,7 +20879,7 @@ var Equivalence = (self2, that) => matchWith(self2, that, {
   onMillis: (self3, that2) => self3 === that2,
   onNanos: (self3, that2) => self3 === that2
 });
-var greaterThanOrEqualTo = /* @__PURE__ */ dual(2, (self2, that) => matchWith(self2, that, {
+var greaterThanOrEqualTo2 = /* @__PURE__ */ dual(2, (self2, that) => matchWith(self2, that, {
   onMillis: (self3, that2) => self3 >= that2,
   onNanos: (self3, that2) => self3 >= that2
 }));
@@ -25761,6 +25764,25 @@ var updateManyAs2 = updateManyAs;
 var empty21 = empty20;
 
 // node_modules/effect/dist/esm/LogLevel.js
+var LogLevel_exports = {};
+__export(LogLevel_exports, {
+  All: () => All,
+  Debug: () => Debug,
+  Error: () => Error2,
+  Fatal: () => Fatal,
+  Info: () => Info,
+  None: () => None3,
+  Order: () => Order2,
+  Trace: () => Trace,
+  Warning: () => Warning,
+  allLevels: () => allLevels,
+  fromLiteral: () => fromLiteral,
+  greaterThan: () => greaterThan2,
+  greaterThanEqual: () => greaterThanEqual,
+  lessThan: () => lessThan2,
+  lessThanEqual: () => lessThanEqual,
+  locally: () => locally
+});
 var All = logLevelAll;
 var Fatal = logLevelFatal;
 var Error2 = logLevelError;
@@ -25769,8 +25791,13 @@ var Info = logLevelInfo;
 var Debug = logLevelDebug;
 var Trace = logLevelTrace;
 var None3 = logLevelNone;
+var allLevels = allLogLevels;
+var locally = /* @__PURE__ */ dual(2, (use, self2) => fiberRefLocally(use, currentLogLevel, self2));
 var Order2 = /* @__PURE__ */ pipe(Order, /* @__PURE__ */ mapInput2((level) => level.ordinal));
+var lessThan2 = /* @__PURE__ */ lessThan(Order2);
+var lessThanEqual = /* @__PURE__ */ lessThanOrEqualTo(Order2);
 var greaterThan2 = /* @__PURE__ */ greaterThan(Order2);
+var greaterThanEqual = /* @__PURE__ */ greaterThanOrEqualTo(Order2);
 var fromLiteral = (literal3) => {
   switch (literal3) {
     case "All":
@@ -28281,7 +28308,7 @@ var summary3 = (key) => {
       if (item != null) {
         const [t, v] = item;
         const age = millis(now - t);
-        if (greaterThanOrEqualTo(age, zero) && age <= maxAge) {
+        if (greaterThanOrEqualTo2(age, zero) && age <= maxAge) {
           builder.push(v);
         }
       }
@@ -32132,7 +32159,7 @@ __export(Effect_exports, {
   let: () => let_3,
   liftPredicate: () => liftPredicate2,
   linkSpans: () => linkSpans2,
-  locally: () => locally,
+  locally: () => locally2,
   locallyScoped: () => locallyScoped,
   locallyScopedWith: () => locallyScopedWith,
   locallyWith: () => locallyWith,
@@ -32336,7 +32363,7 @@ var make35 = (startMillis, endMillis) => {
     endMillis
   };
 };
-var lessThan2 = /* @__PURE__ */ dual(2, (self2, that) => min2(self2, that) === self2);
+var lessThan3 = /* @__PURE__ */ dual(2, (self2, that) => min2(self2, that) === self2);
 var min2 = /* @__PURE__ */ dual(2, (self2, that) => {
   if (self2.endMillis <= that.startMillis) return self2;
   if (that.endMillis <= self2.startMillis) return that;
@@ -32359,7 +32386,7 @@ var after = (startMilliseconds) => {
 
 // node_modules/effect/dist/esm/ScheduleInterval.js
 var empty28 = empty27;
-var lessThan3 = lessThan2;
+var lessThan4 = lessThan3;
 var isEmpty8 = isEmpty7;
 var intersect2 = intersect;
 var after2 = after;
@@ -32381,7 +32408,7 @@ var intersectLoop = (_left, _right, _acc) => {
   while (isNonEmpty(left3) && isNonEmpty(right3)) {
     const interval = pipe(headNonEmpty2(left3), intersect2(headNonEmpty2(right3)));
     const intervals = isEmpty8(interval) ? acc : pipe(acc, prepend2(interval));
-    if (pipe(headNonEmpty2(left3), lessThan3(headNonEmpty2(right3)))) {
+    if (pipe(headNonEmpty2(left3), lessThan4(headNonEmpty2(right3)))) {
       left3 = tailNonEmpty2(left3);
     } else {
       right3 = tailNonEmpty2(right3);
@@ -32396,7 +32423,7 @@ var start = (self2) => {
 var end = (self2) => {
   return pipe(self2.intervals, head2, getOrElse(() => empty28)).endMillis;
 };
-var lessThan4 = /* @__PURE__ */ dual(2, (self2, that) => start(self2) < start(that));
+var lessThan5 = /* @__PURE__ */ dual(2, (self2, that) => start(self2) < start(that));
 var isNonEmpty3 = (self2) => {
   return isNonEmpty(self2.intervals);
 };
@@ -32406,7 +32433,7 @@ var make38 = make37;
 var intersect4 = intersect3;
 var start2 = start;
 var end2 = end;
-var lessThan5 = lessThan4;
+var lessThan6 = lessThan5;
 var isNonEmpty4 = isNonEmpty3;
 
 // node_modules/effect/dist/esm/internal/schedule/decision.js
@@ -32541,7 +32568,7 @@ var intersectWithLoop = (self2, that, input, lState, out, lInterval, rState, out
   if (isNonEmpty4(combined)) {
     return succeed([[lState, rState], [out, out2], _continue2(combined)]);
   }
-  if (pipe(lInterval, lessThan5(rInterval))) {
+  if (pipe(lInterval, lessThan6(rInterval))) {
     return flatMap7(self2.step(end2(lInterval), input, lState), ([lState2, out3, decision]) => {
       if (isDone4(decision)) {
         return succeed([[lState2, rState], [out3, out2], done6]);
@@ -33253,11 +33280,11 @@ function fromEffectContext(effect2) {
 }
 var fiberRefLocally2 = /* @__PURE__ */ dual(3, (self2, ref, value) => locallyEffect(self2, fiberRefLocally(ref, value)));
 var locallyEffect = /* @__PURE__ */ dual(2, (self2, f) => {
-  const locally3 = Object.create(proto3);
-  locally3._tag = "Locally";
-  locally3.self = self2;
-  locally3.f = f;
-  return locally3;
+  const locally4 = Object.create(proto3);
+  locally4._tag = "Locally";
+  locally4.self = self2;
+  locally4.f = f;
+  return locally4;
 });
 var fiberRefLocallyWith2 = /* @__PURE__ */ dual(3, (self2, ref, value) => locallyEffect(self2, fiberRefLocallyWith(ref, value)));
 var fiberRefLocallyScoped2 = (self2, value) => scopedDiscard(fiberRefLocallyScoped(self2, value));
@@ -33763,7 +33790,7 @@ var scheduleFrom = scheduleFrom_Effect;
 var whileLoop2 = whileLoop;
 var getFiberRefs = fiberRefs2;
 var inheritFiberRefs2 = inheritFiberRefs;
-var locally = fiberRefLocally;
+var locally2 = fiberRefLocally;
 var locallyWith = fiberRefLocallyWith;
 var locallyScoped = fiberRefLocallyScoped;
 var locallyScopedWith = fiberRefLocallyScopedWith;
@@ -33934,7 +33961,7 @@ __export(Layer_exports, {
   isFresh: () => isFresh2,
   isLayer: () => isLayer2,
   launch: () => launch2,
-  locally: () => locally2,
+  locally: () => locally3,
   locallyEffect: () => locallyEffect2,
   locallyScoped: () => locallyScoped2,
   locallyWith: () => locallyWith2,
@@ -34046,7 +34073,7 @@ var orElse5 = orElse3;
 var passthrough3 = passthrough2;
 var project2 = project;
 var locallyEffect2 = locallyEffect;
-var locally2 = fiberRefLocally2;
+var locally3 = fiberRefLocally2;
 var locallyWith2 = fiberRefLocallyWith2;
 var locallyScoped2 = fiberRefLocallyScoped2;
 var fiberRefLocallyScopedWith3 = fiberRefLocallyScopedWith2;
@@ -34701,11 +34728,11 @@ var minimumLogLevel2 = minimumLogLevel;
 var isLogger2 = isLogger;
 
 // src/error-handling.ts
-var ExitError = class extends Error {
+var FatalError = class extends Error {
   title;
   messages;
   constructor(params) {
-    super(params.title);
+    super([params.title, ...params.messages ?? []].join("\n    "));
     this.title = params.title;
     this.messages = params.messages ?? [];
   }
@@ -34730,25 +34757,23 @@ var inputs = validateConfig({
     })
   ),
   workflowJobName: Config_exports.string("workflow-job-name"),
-  isDryRun: Config_exports.boolean("dry-run")
+  isDryRun: Config_exports.boolean("dry-run"),
+  logLevel: getLogLevelConfig({ shouldNotLogError: true })
 }).pipe(
   Effect_exports.tap((inputs2) => Effect_exports.logDebug("Inputs", inputs2)),
   Effect_exports.mapError(
-    (configErrors) => new ExitError({
-      title: configErrors.length === 1 ? "There was an error with an input" : `There were ${configErrors.length} errors with inputs`,
-      messages: configErrors.map((error) => {
-        if (isMissingData2(error)) {
-          return `Input "${error.path.join("-")}" is missing`;
-        }
-        if (isInvalidData2(error)) {
-          return `Input "${error.path.join("-")}" is invalid: ${error.message}`;
-        }
-        throw new Error(`Unexpected error: ${error}`);
-      })
+    (configErrors) => new FatalError({
+      title: configErrors.length === 1 ? "There was a fatal error with an input" : `There were ${configErrors.length} fatal errors with inputs`,
+      messages: configErrors.map(getConfigErrorMessage)
     })
   )
 );
 var InputsLive = Layer_exports.effect(Inputs, inputs);
+function getLogLevelConfig(options) {
+  return Config_exports.logLevel("log-level").pipe(
+    recoverFromConfigErrorWithDefault(LogLevel_exports.Info, options)
+  );
+}
 function validateConfig(config2) {
   const entries2 = objectEntriesUnsafe(config2);
   return Effect_exports.validateAll(entries2, (entry) => entry[1]).pipe(
@@ -34757,12 +34782,51 @@ function validateConfig(config2) {
     )
   );
 }
+function getConfigErrorMessage(error) {
+  if (isMissingData2(error)) {
+    return `Input "${error.path.join("-")}" is missing`;
+  }
+  if (isInvalidData2(error)) {
+    return `Input "${error.path.join("-")}" is invalid: ${error.message}`;
+  }
+  throw new Error(`Unexpected error: ${error}`);
+}
+function recoverFromConfigErrorWithDefault(defaultValue, options = {}) {
+  return Effect_exports.catchAll((configError) => {
+    if (!isMissingData2(configError) && !isInvalidData2(configError)) {
+      throw new Error(`Unexpected error: ${configError}`);
+    }
+    if (options.shouldNotLogError) {
+      return Effect_exports.succeed(defaultValue);
+    }
+    const inputPath = configError.path.join("-");
+    const stringifiedDefaultValue = typeof defaultValue === "string" || typeof defaultValue === "boolean" || typeof defaultValue === "number" ? JSON.stringify(defaultValue) : JSON.stringify(defaultValue.label.toLowerCase());
+    return Effect_exports.logError(
+      `There was a recoverable error with the ${inputPath} input`,
+      getConfigErrorMessage(configError),
+      `Using ${inputPath} ${stringifiedDefaultValue} instead`
+    ).pipe(Effect_exports.map(() => defaultValue));
+  });
+}
+
+// src/services/logger.ts
+var LoggerLive = getLogLevelConfig().pipe(
+  Effect_exports.andThen(Logger_exports.minimumLogLevel),
+  Layer_exports.unwrapEffect,
+  Layer_exports.provide(Logger_exports.pretty)
+);
 
 // src/program.ts
 var program = Effect_exports.void.pipe(
   Effect_exports.provide(InputsLive),
-  Effect_exports.tapError((error) => Effect_exports.logFatal(error.title, ...error.messages)),
-  Effect_exports.provide(Logger_exports.pretty)
+  Effect_exports.tapBoth({
+    onSuccess: () => Effect_exports.logInfo("Action completed successfully"),
+    onFailure: (error) => Effect_exports.logFatal(error.title, ...error.messages).pipe(
+      Effect_exports.andThen(Effect_exports.logInfo("Action aborted"))
+    )
+  }),
+  Effect_exports.tapDefect((defect) => Effect_exports.logFatal("Action died unexpectedly", defect)),
+  Effect_exports.provide(LoggerLive)
 );
 
 // node_modules/@effect/platform-node/dist/esm/NodeRuntime.js
