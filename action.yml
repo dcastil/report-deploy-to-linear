@@ -22,6 +22,10 @@ inputs:
         description: 'Run action without causing any changes'
         default: false
         required: false
+    log-level:
+        description: 'Minimum log level to emit, can be one of "all", "fatal", "error", "warn", "info", "debug", "trace", "off"'
+        default: 'info'
+        required: false
 runs:
     using: 'node20'
     main: 'dist/index.js'
