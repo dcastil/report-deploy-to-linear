@@ -2,9 +2,15 @@
 git stash push --keep-index --include-untracked
 
 # Run build
-npm run build
-# Add built files to staged
-git add dist
+if npm run build; then
+    # Add built files to staged
+    git add dist
 
-# Move unstaged changes back from stash
-git stash pop
+    # Move unstaged changes back from stash
+    git stash pop
+else
+    # Move unstaged changes back from stash
+    git stash pop
+
+    exit 1
+fi
