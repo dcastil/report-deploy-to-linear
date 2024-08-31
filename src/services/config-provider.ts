@@ -56,6 +56,7 @@ export function getConfigProviderTest(json?: object) {
         ConfigProvider.fromJson({
             'github-token': 'test-token',
             'deployed-commit-sha': 'ffac537e6cbbf934b08745a378932722df287a53',
+            'workflow-repository': 'octocat/hello-world',
             'workflow-file-name':
                 'octocat/hello-world/.github/workflows/my-workflow.yml@refs/heads/my_branch',
             'workflow-job-name': 'my-job',

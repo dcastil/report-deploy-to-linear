@@ -10,6 +10,10 @@ inputs:
         description: 'The SHA of the commit that got deployed'
         default: '${{ github.sha }}'
         required: false
+    workflow-repository:
+        description: 'The owner and repository name of the repo containing the deployment workflow file, for example "octocat/Hello-World"'
+        default: '${{ github.repository }}'
+        required: false
     workflow-file-name:
         description: 'Workflow file name or workflow ref that contains deployment job'
         default: '${{ github.workflow_ref }}'

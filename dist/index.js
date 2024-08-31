@@ -38834,11 +38834,23 @@ var Inputs = class extends Context_exports.Tag("Inputs")() {
 var inputs = validateConfig({
   githubToken: Config_exports.redacted("github-token"),
   deployedCommitSha: Config_exports.string("deployed-commit-sha"),
+  workflowRepository: Config_exports.string("workflow-repository").pipe(
+    Config_exports.mapAttempt((ownerAndRepo) => {
+      const match11 = /^([^/]+)\/([^/]+)$/.exec(ownerAndRepo);
+      if (!match11) {
+        throw new Error(`Could not parse owner and repo, received "${ownerAndRepo}"`);
+      }
+      return {
+        owner: match11[1],
+        repo: match11[2]
+      };
+    })
+  ),
   workflowFileName: Config_exports.string("workflow-file-name").pipe(
     Config_exports.mapAttempt((value3) => {
       const match11 = /^.*?([^/]+\.ya?ml)(@.+)?$/.exec(value3);
       if (!match11) {
-        throw new Error(`Could not parse file name (received "${value3}")`);
+        throw new Error(`Could not parse file name, received "${value3}"`);
       }
       return match11[1];
     })

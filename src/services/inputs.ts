@@ -10,12 +10,27 @@ const inputs = validateConfig({
 
     deployedCommitSha: Config.string('deployed-commit-sha'),
 
+    workflowRepository: Config.string('workflow-repository').pipe(
+        Config.mapAttempt((ownerAndRepo) => {
+            const match = /^([^/]+)\/([^/]+)$/.exec(ownerAndRepo)
+
+            if (!match) {
+                throw new Error(`Could not parse owner and repo, received "${ownerAndRepo}"`)
+            }
+
+            return {
+                owner: match[1]!,
+                repo: match[2]!,
+            }
+        }),
+    ),
+
     workflowFileName: Config.string('workflow-file-name').pipe(
         Config.mapAttempt((value) => {
             const match = /^.*?([^/]+\.ya?ml)(@.+)?$/.exec(value)
 
             if (!match) {
-                throw new Error(`Could not parse file name (received "${value}")`)
+                throw new Error(`Could not parse file name, received "${value}"`)
             }
 
             return match[1]!
