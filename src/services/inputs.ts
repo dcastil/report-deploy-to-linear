@@ -3,7 +3,7 @@ import { isInvalidData, isMissingData } from 'effect/ConfigError'
 import { FatalError } from '../error-handling'
 import { objectEntriesUnsafe } from '../utils'
 
-class Inputs extends Context.Tag('Inputs')<Inputs, Effect.Effect.Success<typeof inputs>>() {}
+export class Inputs extends Context.Tag('Inputs')<Inputs, Effect.Effect.Success<typeof inputs>>() {}
 
 const inputs = validateConfig({
     githubToken: Config.redacted('github-token'),

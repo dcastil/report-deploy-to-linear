@@ -1,6 +1,9 @@
-import { Effect } from 'effect'
-import { program } from './program'
+import { createProgram } from './program'
 import { runMainLive } from './run-main'
 import { ConfigProviderLive } from './services/config-provider'
+import { GithubClientLive } from './services/github-client'
 
-program.pipe(Effect.provide(ConfigProviderLive), runMainLive)
+createProgram({
+    configProvider: ConfigProviderLive,
+    githubClient: GithubClientLive,
+}).pipe(runMainLive)
