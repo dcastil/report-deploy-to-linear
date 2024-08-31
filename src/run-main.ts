@@ -1,12 +1,12 @@
 import { NodeRuntime } from '@effect/platform-node'
 import { Cause, Effect, Exit } from 'effect'
-import { FatalError } from './error-handling'
+import { ActionError } from './error-handling'
 
-export function runMainLive<A>(effect: Effect.Effect<A, FatalError>) {
+export function runMainLive<A>(effect: Effect.Effect<A, ActionError>) {
     return NodeRuntime.runMain(effect, { disableErrorReporting: true })
 }
 
-export function runMainTest<A>(effect: Effect.Effect<A, FatalError>) {
+export function runMainTest<A>(effect: Effect.Effect<A, ActionError>) {
     return NodeRuntime.runMain(effect, {
         disableErrorReporting: true,
         teardown: (exit) => {

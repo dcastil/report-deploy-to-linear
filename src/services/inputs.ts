@@ -1,6 +1,6 @@
 import { Config, ConfigError, Context, Effect, Layer, LogLevel } from 'effect'
 import { isInvalidData, isMissingData } from 'effect/ConfigError'
-import { FatalError } from '../error-handling'
+import { ActionError } from '../error-handling'
 import { objectEntriesUnsafe } from '../utils'
 
 export class Inputs extends Context.Tag('Inputs')<Inputs, Effect.Effect.Success<typeof inputs>>() {}
@@ -46,11 +46,11 @@ const inputs = validateConfig({
     Effect.tap((inputs) => Effect.logDebug('Inputs', inputs)),
     Effect.mapError(
         (configErrors) =>
-            new FatalError({
+            new ActionError({
                 title:
                     configErrors.length === 1
-                        ? 'There was a fatal error with an input'
-                        : `There were ${configErrors.length} fatal errors with inputs`,
+                        ? 'There was an error with an input'
+                        : `There were ${configErrors.length} errors with inputs`,
                 messages: configErrors.map(getConfigErrorMessage),
             }),
     ),

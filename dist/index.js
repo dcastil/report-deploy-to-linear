@@ -38815,11 +38815,12 @@ var unsafeWipe2 = unsafeWipe;
 var getEquivalence4 = (isEquivalent) => make((x, y) => isEquivalent(value2(x), value2(y)));
 
 // src/error-handling.ts
-var FatalError = class extends Error {
+var ActionError = class extends Error {
   title;
   messages;
   constructor(params) {
-    super([params.title, ...params.messages ?? []].join("\n    "));
+    const fullMessage = [params.title, ...params.messages ?? []].join("\n    ");
+    super(fullMessage, { cause: params.cause });
     this.title = params.title;
     this.messages = params.messages ?? [];
   }
@@ -38861,8 +38862,8 @@ var inputs = validateConfig({
 }).pipe(
   Effect_exports.tap((inputs2) => Effect_exports.logDebug("Inputs", inputs2)),
   Effect_exports.mapError(
-    (configErrors) => new FatalError({
-      title: configErrors.length === 1 ? "There was a fatal error with an input" : `There were ${configErrors.length} fatal errors with inputs`,
+    (configErrors) => new ActionError({
+      title: configErrors.length === 1 ? "There was an error with an input" : `There were ${configErrors.length} errors with inputs`,
       messages: configErrors.map(getConfigErrorMessage)
     })
   )
@@ -38922,11 +38923,11 @@ function createProgram(params) {
     Effect_exports.provide(InputsLive),
     Effect_exports.tapBoth({
       onSuccess: () => Effect_exports.logInfo("Action completed successfully"),
-      onFailure: (error) => Effect_exports.logFatal(error.title, ...error.messages).pipe(
+      onFailure: (error) => Effect_exports.logError(error.title, ...error.messages).pipe(
         Effect_exports.andThen(Effect_exports.logInfo("Action aborted"))
       )
     }),
-    Effect_exports.tapDefect((defect) => Effect_exports.logFatal("Action died unexpectedly", defect)),
+    Effect_exports.tapDefect((defect) => Effect_exports.logError("Action died unexpectedly", defect)),
     Effect_exports.provide(LoggerLive),
     Effect_exports.provide(params.configProvider)
   );
