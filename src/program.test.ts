@@ -1,15 +1,16 @@
 import { Effect } from 'effect'
 import { expect, test } from 'vitest'
 import { createProgram } from './program'
-import { runMainTest } from './run-main'
 import { getConfigProviderTest } from './services/config-provider'
 import { getGitHubClientTest } from './services/github-client'
 
 test('runs without errors', () => {
-    createProgram({
-        configProvider: getConfigProviderTest(),
+    return createProgram({
+        configProvider: getConfigProviderTest({
+            'log-level': 'off',
+        }),
         githubClient: getGitHubClientTest(),
-    }).pipe(runMainTest)
+    }).pipe(Effect.runPromise)
 })
 
 test('throws an error on missing inputs', () => {
@@ -21,5 +22,5 @@ test('throws an error on missing inputs', () => {
             }),
             githubClient: getGitHubClientTest(),
         }).pipe(Effect.runPromise),
-    ).rejects.toThrowError('There was a fatal error with an input')
+    ).rejects.toThrowError('There was an error with an input')
 })
