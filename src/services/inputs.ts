@@ -1,4 +1,4 @@
-import { Config, ConfigError, Context, Effect, Layer, LogLevel } from 'effect'
+import { Config, ConfigError, Context, Effect, Layer, LogLevel, Redacted } from 'effect'
 import { isInvalidData, isMissingData } from 'effect/ConfigError'
 import { ActionError } from '../error-handling'
 import { objectEntriesUnsafe } from '../utils'
@@ -7,6 +7,26 @@ export class Inputs extends Context.Tag('Inputs')<Inputs, Effect.Effect.Success<
 
 const inputs = validateConfig({
     githubToken: Config.redacted('github-token'),
+
+    linearToken: Config.redacted('linear-token').pipe(
+        Config.mapAttempt((linearToken) => {
+            if (Redacted.value(linearToken).startsWith('lin_api_')) {
+                return {
+                    type: 'personal-api-key' as const,
+                    token: linearToken,
+                }
+            }
+
+            if (Redacted.value(linearToken).startsWith('lin_oauth_')) {
+                return {
+                    type: 'oauth-access-token' as const,
+                    token: linearToken,
+                }
+            }
+
+            throw new Error('Could not parse Linear token.')
+        }),
+    ),
 
     deployedCommitSha: Config.string('deployed-commit-sha'),
 

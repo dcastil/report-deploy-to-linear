@@ -54,7 +54,8 @@ export const ConfigProviderLive = Layer.setConfigProvider(githubActionConfigProv
 export function getConfigProviderTest(json?: object) {
     return Layer.setConfigProvider(
         ConfigProvider.fromJson({
-            'github-token': 'test-token',
+            'github-token': 'github-test-token',
+            'linear-token': 'lin_api_test-token',
             'deployed-commit-sha': 'a9aa5911cc624d0ddd2ee81bcce00b932a437aea',
             'workflow-repository': 'dcastil/tailwind-merge',
             'workflow-file-name': 'npm-publish.yml',

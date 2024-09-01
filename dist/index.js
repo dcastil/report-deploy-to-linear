@@ -38844,6 +38844,23 @@ var Inputs = class extends Context_exports.Tag("Inputs")() {
 };
 var inputs = validateConfig({
   githubToken: Config_exports.redacted("github-token"),
+  linearToken: Config_exports.redacted("linear-token").pipe(
+    Config_exports.mapAttempt((linearToken) => {
+      if (Redacted_exports.value(linearToken).startsWith("lin_api_")) {
+        return {
+          type: "personal-api-key",
+          token: linearToken
+        };
+      }
+      if (Redacted_exports.value(linearToken).startsWith("lin_oauth_")) {
+        return {
+          type: "oauth-access-token",
+          token: linearToken
+        };
+      }
+      throw new Error("Could not parse Linear token.");
+    })
+  ),
   deployedCommitSha: Config_exports.string("deployed-commit-sha"),
   workflowRepository: Config_exports.string("workflow-repository").pipe(
     Config_exports.mapAttempt((ownerAndRepo) => {

@@ -6,6 +6,10 @@ inputs:
         description: 'Github token of the repository (automatically created by Github)'
         default: '${{ github.token }}'
         required: false
+    linear-token:
+        description: 'Personal API key or OAuth access token for Linear workspace'
+        default: '${{ secrets.LINEAR_TOKEN }}'
+        required: false
     deployed-commit-sha:
         description: 'The SHA of the commit that got deployed'
         default: '${{ github.sha }}'
