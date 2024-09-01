@@ -38923,6 +38923,10 @@ function createProgram(params) {
   return Effect_exports.void.pipe(
     Effect_exports.provide(params.githubClient),
     Effect_exports.provide(InputsLive),
+    Effect_exports.catchIf(
+      (error) => error.exit === "success",
+      (error) => Effect_exports.logInfo(error.title, ...error.messages)
+    ),
     Effect_exports.tapBoth({
       onSuccess: () => Effect_exports.logInfo("Action completed successfully"),
       onFailure: (error) => Effect_exports.logError(error.title, ...error.messages).pipe(

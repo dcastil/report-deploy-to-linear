@@ -13,6 +13,10 @@ export function createProgram(params: CreateProgramParams): Effect.Effect<void, 
     return Effect.void.pipe(
         Effect.provide(params.githubClient),
         Effect.provide(InputsLive),
+        Effect.catchIf(
+            (error) => error.exit === 'success',
+            (error) => Effect.logInfo(error.title, ...error.messages),
+        ),
         Effect.tapBoth({
             onSuccess: () => Effect.logInfo('Action completed successfully'),
             onFailure: (error: ActionError) =>
