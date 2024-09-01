@@ -27,7 +27,7 @@ inputs:
         default: false
         required: false
     log-level:
-        description: 'Minimum log level to emit, can be one of "all", "fatal", "error", "warn", "info", "debug", "trace", "off"'
+        description: 'Minimum log level to emit, can be one of "all", "error", "warn", "info", "debug", "off"'
         default: 'info'
         required: false
 runs:
