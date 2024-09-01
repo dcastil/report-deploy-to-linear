@@ -21,11 +21,10 @@
         "dist",
         "src"
     ],
-    "type": "module",
     "scripts": {
         "test": "vitest",
         "typecheck": "tsc --noEmit",
-        "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --format=esm --target=node20 --sourcemap",
+        "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --target=node20 --sourcemap",
         "prepare": "husky"
     },
     "devDependencies": {
