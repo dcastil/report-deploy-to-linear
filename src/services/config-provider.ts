@@ -1,4 +1,4 @@
-import core from '@actions/core'
+import * as core from '@actions/core'
 import { ConfigError, ConfigProvider, ConfigProviderPathPatch, Effect, Layer, pipe } from 'effect'
 
 const pathDelimiter = '-'

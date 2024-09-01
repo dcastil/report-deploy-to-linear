@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises'
 
-import github from '@actions/github'
+import * as github from '@actions/github'
 import { Context, Effect, Layer, Redacted } from 'effect'
 
 import { ActionError, transformToActionError } from '../error-handling'

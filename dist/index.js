@@ -21777,11 +21777,11 @@ var require_github = __commonJS({
     var Context = __importStar(require_context());
     var utils_1 = require_utils3();
     exports2.context = new Context.Context();
-    function getOctokit(token, options, ...additionalPlugins) {
+    function getOctokit2(token, options, ...additionalPlugins) {
       const GitHubWithPlugins = utils_1.GitHub.plugin(...additionalPlugins);
       return new GitHubWithPlugins((0, utils_1.getOctokitOptions)(token, options));
     }
-    exports2.getOctokit = getOctokit;
+    exports2.getOctokit = getOctokit2;
   }
 });
 
@@ -35242,7 +35242,7 @@ var require_core = __commonJS({
       process.env["PATH"] = `${inputPath}${path.delimiter}${process.env["PATH"]}`;
     }
     exports2.addPath = addPath;
-    function getInput(name, options) {
+    function getInput2(name, options) {
       const val = process.env[`INPUT_${name.replace(/ /g, "_").toUpperCase()}`] || "";
       if (options && options.required && !val) {
         throw new Error(`Input required and not supplied: ${name}`);
@@ -35252,9 +35252,9 @@ var require_core = __commonJS({
       }
       return val.trim();
     }
-    exports2.getInput = getInput;
+    exports2.getInput = getInput2;
     function getMultilineInput(name, options) {
-      const inputs2 = getInput(name, options).split("\n").filter((x) => x !== "");
+      const inputs2 = getInput2(name, options).split("\n").filter((x) => x !== "");
       if (options && options.trimWhitespace === false) {
         return inputs2;
       }
@@ -35264,7 +35264,7 @@ var require_core = __commonJS({
     function getBooleanInput(name, options) {
       const trueValue = ["true", "True", "TRUE"];
       const falseValue = ["false", "False", "FALSE"];
-      const val = getInput(name, options);
+      const val = getInput2(name, options);
       if (trueValue.includes(val))
         return true;
       if (falseValue.includes(val))
@@ -51162,7 +51162,7 @@ function transformToActionError(title) {
 }
 
 // src/services/github-client.ts
-var import_github = __toESM(require_github());
+var github = __toESM(require_github());
 
 // src/utils.ts
 var objectEntriesUnsafe = Object.entries;
@@ -51270,7 +51270,7 @@ var GithubClient = class extends Context_exports.Tag("GithubClient")() {
 };
 var githubClient = Inputs.pipe(
   Effect_exports.andThen((inputs2) => {
-    const octokit = import_github.default.getOctokit(Redacted_exports.value(inputs2.githubToken));
+    const octokit = github.getOctokit(Redacted_exports.value(inputs2.githubToken));
     return {
       listWorkflowRuns: () => Effect_exports.tryPromise({
         try: () => octokit.rest.actions.listWorkflowRuns({
@@ -51742,14 +51742,14 @@ function runMainLive(effect2) {
 }
 
 // src/services/config-provider.ts
-var import_core2 = __toESM(require_core());
+var core = __toESM(require_core());
 var pathDelimiter = "-";
 var sequenceDelimiterRegex = /\s*,\s*/;
 var githubActionConfigProvider = ConfigProvider_exports.fromFlat(
   ConfigProvider_exports.makeFlat({
     load(path, primitive3, split) {
       const pathString = path.join(pathDelimiter);
-      const inputValue = import_core2.default.getInput(pathString);
+      const inputValue = core.getInput(pathString);
       if (!inputValue) {
         return Effect_exports.fail(
           ConfigError_exports.MissingData(
