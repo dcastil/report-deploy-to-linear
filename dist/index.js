@@ -35291,10 +35291,10 @@ Support boolean input list: \`true | True | TRUE | false | False | FALSE\``);
       error(message);
     }
     exports2.setFailed = setFailed;
-    function isDebug() {
+    function isDebug2() {
       return process.env["RUNNER_DEBUG"] === "1";
     }
-    exports2.isDebug = isDebug;
+    exports2.isDebug = isDebug2;
     function debug(message) {
       command_1.issueCommand("debug", {}, message);
     }
@@ -51693,6 +51693,9 @@ function createProgram(params) {
   );
 }
 
+// src/run-main.ts
+var core = __toESM(require_core());
+
 // node_modules/@effect/platform-node/dist/esm/NodeRuntime.js
 var NodeRuntime_exports = {};
 __export(NodeRuntime_exports, {
@@ -51738,18 +51741,18 @@ var runMain3 = runMain2;
 
 // src/run-main.ts
 function runMainLive(effect2) {
-  return NodeRuntime_exports.runMain(effect2, { disableErrorReporting: false });
+  return NodeRuntime_exports.runMain(effect2, { disableErrorReporting: !core.isDebug() });
 }
 
 // src/services/config-provider.ts
-var core = __toESM(require_core());
+var core2 = __toESM(require_core());
 var pathDelimiter = "-";
 var sequenceDelimiterRegex = /\s*,\s*/;
 var githubActionConfigProvider = ConfigProvider_exports.fromFlat(
   ConfigProvider_exports.makeFlat({
     load(path, primitive3, split) {
       const pathString = path.join(pathDelimiter);
-      const inputValue = core.getInput(pathString);
+      const inputValue = core2.getInput(pathString);
       if (!inputValue) {
         return Effect_exports.fail(
           ConfigError_exports.MissingData(

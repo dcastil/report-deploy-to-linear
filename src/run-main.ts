@@ -1,9 +1,11 @@
+import * as core from '@actions/core'
 import { NodeRuntime } from '@effect/platform-node'
 import { Cause, Effect, Exit } from 'effect'
+
 import { ActionError } from './error-handling'
 
 export function runMainLive<A>(effect: Effect.Effect<A, ActionError>) {
-    return NodeRuntime.runMain(effect, { disableErrorReporting: false })
+    return NodeRuntime.runMain(effect, { disableErrorReporting: !core.isDebug() })
 }
 
 export function runMainTest<A>(effect: Effect.Effect<A, ActionError>) {
