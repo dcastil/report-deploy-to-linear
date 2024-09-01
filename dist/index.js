@@ -38832,6 +38832,22 @@ var ActionError = class extends Error {
     this.exit = params.exit ?? "failure";
   }
 };
+function transformToActionError(title) {
+  return (error) => {
+    if (error instanceof Error) {
+      return new ActionError({
+        title,
+        messages: [error.message],
+        cause: error
+      });
+    }
+    return new ActionError({
+      title,
+      messages: [error],
+      cause: error
+    });
+  };
+}
 
 // src/services/github-client.ts
 var import_github = __toESM(require_github(), 1);
@@ -38988,22 +39004,6 @@ var githubClient = Inputs.pipe(
   })
 );
 var GithubClientLive = Layer_exports.effect(GithubClient, githubClient);
-function transformToActionError(title) {
-  return (error) => {
-    if (error instanceof Error) {
-      return new ActionError({
-        title,
-        messages: [error.message],
-        cause: error
-      });
-    }
-    return new ActionError({
-      title,
-      messages: [error],
-      cause: error
-    });
-  };
-}
 
 // src/prs-merged-since-previous-deploy.ts
 var pRsMergedSincePreviousDeploy = Effect_exports.void.pipe(

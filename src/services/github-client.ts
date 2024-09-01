@@ -3,7 +3,7 @@ import fs from 'node:fs/promises'
 import github from '@actions/github'
 import { Context, Effect, Layer, Redacted } from 'effect'
 
-import { ActionError } from '../error-handling'
+import { ActionError, transformToActionError } from '../error-handling'
 import { Inputs } from './inputs'
 
 export class GithubClient extends Context.Tag('GithubClient')<
@@ -172,22 +172,4 @@ function wrapTestResponses<
             mode === 'write' ? wrapWrite(functionName, func) : wrapRead(functionName),
         ]),
     ) as T
-}
-
-function transformToActionError(title: string) {
-    return (error: unknown) => {
-        if (error instanceof Error) {
-            return new ActionError({
-                title,
-                messages: [error.message],
-                cause: error,
-            })
-        }
-
-        return new ActionError({
-            title,
-            messages: [error],
-            cause: error,
-        })
-    }
 }
