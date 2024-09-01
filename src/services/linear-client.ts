@@ -45,12 +45,12 @@ const linearClient = Inputs.pipe(
         }
 
         return {
-            getIssueViewForAttachmentUrl: (url: string, commentStartsWith: string) =>
+            getIssueViewForAttachmentUrl: (url: string, commentBody: string) =>
                 Effect.tryPromise({
                     try: () =>
                         linear.client.request(issueViewForAttachmentQuery, {
                             url,
-                            commentStartsWith,
+                            commentBody,
                         }) as Promise<IssueViewForAttachmentUrlQueryResponse>,
                     catch: transformToActionError(
                         `Could not get issue view for attachment URL ${url}`,
@@ -73,6 +73,7 @@ interface IssueViewForAttachmentUrlQueryResponse {
             nodes: {
                 issue: {
                     id: string
+                    identifier: string
                     comments: {
                         nodes: {
                             id: string
@@ -85,12 +86,13 @@ interface IssueViewForAttachmentUrlQueryResponse {
 }
 
 const issueViewForAttachmentQuery = gql`
-    query IssueViewForAttachmentUrl($url: String!, $$commentStartsWith: String!) {
+    query IssueViewForAttachmentUrl($url: String!, $$commentBody: String!) {
         attachmentsForURL(url: $url) {
             nodes {
                 issue {
                     id
-                    comments(filter: { body: { startsWith: $commentStartsWith } }, first: 1, , orderBy: createdAt) {
+                    identifier
+                    comments(filter: { body: { eq: $commentBody } }, first: 1, , orderBy: createdAt) {
                         nodes {
                             id
                         }
@@ -114,6 +116,7 @@ export function getLinearClientTest(client?: Partial<Effect.Effect.Success<typeo
                                     {
                                         issue: {
                                             id: '87d696f1-4467-4f35-843e-c62b31b26' + url.slice(-3),
+                                            identifier: 'TEST-' + url.slice(-3),
                                             comments: {
                                                 nodes: [],
                                             },
@@ -124,7 +127,7 @@ export function getLinearClientTest(client?: Partial<Effect.Effect.Success<typeo
                         },
                     }),
                 ),
-            createComment: () => Effect.promise(Promise.resolve),
+            createComment: () => Effect.promise(() => Promise.resolve()),
             ...client,
         }),
     )

@@ -51693,10 +51693,10 @@ var linearClient = Inputs.pipe(
       return Effect_exports.logInfo(`Dry run: Would have created comment for issue ${issueId}`, body);
     }
     return {
-      getIssueViewForAttachmentUrl: (url, commentStartsWith) => Effect_exports.tryPromise({
+      getIssueViewForAttachmentUrl: (url, commentBody) => Effect_exports.tryPromise({
         try: () => linear.client.request(issueViewForAttachmentQuery, {
           url,
-          commentStartsWith
+          commentBody
         }),
         catch: transformToActionError(
           `Could not get issue view for attachment URL ${url}`
@@ -51709,12 +51709,13 @@ var linearClient = Inputs.pipe(
 var LinearClientLive = Layer_exports.effect(LinearClient, linearClient);
 var gql = String.raw;
 var issueViewForAttachmentQuery = gql`
-    query IssueViewForAttachmentUrl($url: String!, $$commentStartsWith: String!) {
+    query IssueViewForAttachmentUrl($url: String!, $$commentBody: String!) {
         attachmentsForURL(url: $url) {
             nodes {
                 issue {
                     id
-                    comments(filter: { body: { startsWith: $commentStartsWith } }, first: 1, , orderBy: createdAt) {
+                    identifier
+                    comments(filter: { body: { eq: $commentBody } }, first: 1, , orderBy: createdAt) {
                         nodes {
                             id
                         }
