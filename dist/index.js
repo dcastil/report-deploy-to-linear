@@ -38818,11 +38818,13 @@ var getEquivalence4 = (isEquivalent) => make((x, y) => isEquivalent(value2(x), v
 var ActionError = class extends Error {
   title;
   messages;
+  exit;
   constructor(params) {
     const fullMessage = [params.title, ...params.messages ?? []].join("\n    ");
     super(fullMessage, { cause: params.cause });
     this.title = params.title;
     this.messages = params.messages ?? [];
+    this.exit = params.exit ?? "failure";
   }
 };
 

@@ -2,11 +2,13 @@ interface ActionErrorParams {
     title: string
     messages?: readonly any[]
     cause?: unknown
+    exit?: 'success' | 'failure'
 }
 
 export class ActionError extends Error {
     readonly title: string
     readonly messages: readonly any[]
+    readonly exit: 'success' | 'failure'
 
     constructor(params: ActionErrorParams) {
         const fullMessage = [params.title, ...(params.messages ?? [])].join('\n    ')
@@ -15,5 +17,6 @@ export class ActionError extends Error {
 
         this.title = params.title
         this.messages = params.messages ?? []
+        this.exit = params.exit ?? 'failure'
     }
 }
