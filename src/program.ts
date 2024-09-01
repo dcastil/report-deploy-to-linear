@@ -1,5 +1,6 @@
 import { Effect, Layer } from 'effect'
 import { ActionError } from './error-handling'
+import { pRsMergedSincePreviousDeploy } from './prs-merged-since-previous-deploy'
 import { GithubClient } from './services/github-client'
 import { Inputs, InputsLive } from './services/inputs'
 import { LoggerLive } from './services/logger'
@@ -11,6 +12,7 @@ interface CreateProgramParams {
 
 export function createProgram(params: CreateProgramParams): Effect.Effect<void, ActionError> {
     return Effect.void.pipe(
+        Effect.andThen(() => pRsMergedSincePreviousDeploy),
         Effect.provide(params.githubClient),
         Effect.provide(InputsLive),
         Effect.catchIf(
