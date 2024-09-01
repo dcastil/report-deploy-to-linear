@@ -1,5 +1,4 @@
 "use strict";
-console.log('Action started!');
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -51739,7 +51738,7 @@ var runMain3 = runMain2;
 
 // src/run-main.ts
 function runMainLive(effect2) {
-  return NodeRuntime_exports.runMain(effect2, { disableErrorReporting: true });
+  return NodeRuntime_exports.runMain(effect2, { disableErrorReporting: false });
 }
 
 // src/services/config-provider.ts

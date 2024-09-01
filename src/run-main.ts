@@ -3,7 +3,7 @@ import { Cause, Effect, Exit } from 'effect'
 import { ActionError } from './error-handling'
 
 export function runMainLive<A>(effect: Effect.Effect<A, ActionError>) {
-    return NodeRuntime.runMain(effect, { disableErrorReporting: true })
+    return NodeRuntime.runMain(effect, { disableErrorReporting: false })
 }
 
 export function runMainTest<A>(effect: Effect.Effect<A, ActionError>) {
