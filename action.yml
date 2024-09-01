@@ -8,8 +8,7 @@ inputs:
         required: false
     linear-token:
         description: 'Personal API key or OAuth access token for Linear workspace'
-        default: '${{ secrets.LINEAR_TOKEN }}'
-        required: false
+        required: true
     linear-comment-body:
         description: 'The body of the comment to be added to the Linear issue, in Markdown format, can use variables {{ pullRequest.url }} and {{ pullRequest.title }}'
         default: 'Deployed pull request [{{ pullRequest.title }}]({{ pullRequest.url }}) successfully!'
