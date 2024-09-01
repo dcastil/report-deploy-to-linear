@@ -1,6 +1,7 @@
 import { Effect, Layer } from 'effect'
 import { ActionError } from './error-handling'
 import { pRsMergedSincePreviousDeploy } from './prs-merged-since-previous-deploy'
+import { reportDeployedPrsToLinear } from './report-deployed-prs-to-linear'
 import { GithubClient } from './services/github-client'
 import { Inputs, InputsLive } from './services/inputs'
 import { LinearClient } from './services/linear-client'
@@ -15,6 +16,7 @@ interface CreateProgramParams {
 export function createProgram(params: CreateProgramParams): Effect.Effect<void, ActionError> {
     return Effect.void.pipe(
         Effect.andThen(() => pRsMergedSincePreviousDeploy),
+        Effect.andThen(reportDeployedPrsToLinear),
         Effect.provide(params.linearClient),
         Effect.provide(params.githubClient),
         Effect.provide(InputsLive),
