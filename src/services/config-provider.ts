@@ -55,11 +55,10 @@ export function getConfigProviderTest(json?: object) {
     return Layer.setConfigProvider(
         ConfigProvider.fromJson({
             'github-token': 'test-token',
-            'deployed-commit-sha': 'ffac537e6cbbf934b08745a378932722df287a53',
-            'workflow-repository': 'octocat/hello-world',
-            'workflow-file-name':
-                'octocat/hello-world/.github/workflows/my-workflow.yml@refs/heads/my_branch',
-            'workflow-job-name': 'my-job',
+            'deployed-commit-sha': 'a9aa5911cc624d0ddd2ee81bcce00b932a437aea',
+            'workflow-repository': 'dcastil/tailwind-merge',
+            'workflow-file-name': 'npm-publish.yml',
+            'workflow-job-name': 'publish',
             'dry-run': false,
             'log-level': 'info',
             ...json,
