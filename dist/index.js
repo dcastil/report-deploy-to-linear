@@ -39051,12 +39051,14 @@ var githubClient = Inputs.pipe(
         }),
         catch: transformToActionError(`Could not list jobs for workflow run ${runId}`)
       }),
-      compareCommits: (base, head5) => Effect_exports.tryPromise({
+      compareToCurrentDeployCommit: (head5) => Effect_exports.tryPromise({
         try: () => octokit.rest.repos.compareCommitsWithBasehead({
           ...inputs2.workflowRepository,
-          basehead: `${base}...${head5}`
+          basehead: `${inputs2.deployedCommitSha}...${head5}`
         }),
-        catch: transformToActionError(`Could not compare commits ${base}...${head5}`)
+        catch: transformToActionError(
+          `Could not compare commits ${inputs2.deployedCommitSha}...${head5}`
+        )
       }),
       listCommits: (sha, perPage) => Effect_exports.tryPromise({
         try: () => octokit.rest.repos.listCommits({
@@ -39065,6 +39067,15 @@ var githubClient = Inputs.pipe(
           per_page: perPage
         }),
         catch: transformToActionError(`Could not list commits for SHA ${sha}`)
+      }),
+      listPullRequestsAssociatedWithCommit: (commitSha) => Effect_exports.tryPromise({
+        try: () => octokit.rest.repos.listPullRequestsAssociatedWithCommit({
+          ...inputs2.workflowRepository,
+          commit_sha: commitSha
+        }),
+        catch: transformToActionError(
+          `Could not list pull requests associated with commit ${commitSha}`
+        )
       })
     };
   })
