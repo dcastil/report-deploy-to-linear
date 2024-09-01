@@ -3,16 +3,19 @@ import { ActionError } from './error-handling'
 import { pRsMergedSincePreviousDeploy } from './prs-merged-since-previous-deploy'
 import { GithubClient } from './services/github-client'
 import { Inputs, InputsLive } from './services/inputs'
+import { LinearClient } from './services/linear-client'
 import { LoggerLive } from './services/logger'
 
 interface CreateProgramParams {
     configProvider: Layer.Layer<never>
     githubClient: Layer.Layer<GithubClient, never, Inputs>
+    linearClient: Layer.Layer<LinearClient, never, Inputs>
 }
 
 export function createProgram(params: CreateProgramParams): Effect.Effect<void, ActionError> {
     return Effect.void.pipe(
         Effect.andThen(() => pRsMergedSincePreviousDeploy),
+        Effect.provide(params.linearClient),
         Effect.provide(params.githubClient),
         Effect.provide(InputsLive),
         Effect.catchIf(
