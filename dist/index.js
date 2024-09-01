@@ -51613,6 +51613,12 @@ function reportDeployedPrsToLinear(pullRequests) {
                 Effect_exports.map(
                   (issueView) => issueView.data.attachmentsForURL.nodes
                 ),
+                Effect_exports.tap(
+                  (attachments) => Effect_exports.logDebug(
+                    `${attachments.length} attachment${attachments.length === 1 ? "" : "s"} found for pull request ${pullRequest.url}`,
+                    `Belonging to issue${attachments.length === 1 ? "" : "s"} ${attachments.map((attachment) => attachment.issue.identifier).join(", ")}`
+                  )
+                ),
                 Effect_exports.andThen(
                   (attachments) => Effect_exports.all(
                     attachments.map(
@@ -51657,9 +51663,6 @@ function getCommentBody(pullRequest) {
         }
         return match11;
       })
-    ),
-    Effect_exports.tap(
-      (commentBody) => Effect_exports.logDebug(`Comment body for pull request ${pullRequest.url}`, commentBody)
     )
   );
 }

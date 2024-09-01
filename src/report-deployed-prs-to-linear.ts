@@ -20,6 +20,12 @@ export function reportDeployedPrsToLinear(pullRequests: PullRequest[]) {
                                     Effect.map(
                                         (issueView) => issueView.data.attachmentsForURL.nodes,
                                     ),
+                                    Effect.tap((attachments) =>
+                                        Effect.logDebug(
+                                            `${attachments.length} attachment${attachments.length === 1 ? '' : 's'} found for pull request ${pullRequest.url}`,
+                                            `Belonging to issue${attachments.length === 1 ? '' : 's'} ${attachments.map((attachment) => attachment.issue.identifier).join(', ')}`,
+                                        ),
+                                    ),
                                     Effect.andThen((attachments) =>
                                         Effect.all(
                                             attachments.map((attachment) =>
@@ -71,9 +77,6 @@ function getCommentBody(pullRequest: PullRequest) {
 
                 return match
             }),
-        ),
-        Effect.tap((commentBody) =>
-            Effect.logDebug(`Comment body for pull request ${pullRequest.url}`, commentBody),
         ),
     )
 }
