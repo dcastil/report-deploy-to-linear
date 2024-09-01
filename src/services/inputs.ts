@@ -28,6 +28,8 @@ const inputs = validateConfig({
         }),
     ),
 
+    linearCommentBody: Config.string('linear-comment-body'),
+
     deployedCommitSha: Config.string('deployed-commit-sha'),
 
     workflowRepository: Config.string('workflow-repository').pipe(

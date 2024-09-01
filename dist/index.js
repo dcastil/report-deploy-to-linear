@@ -51194,6 +51194,7 @@ var inputs = validateConfig({
       throw new Error("Could not parse Linear token.");
     })
   ),
+  linearCommentBody: Config_exports.string("linear-comment-body"),
   deployedCommitSha: Config_exports.string("deployed-commit-sha"),
   workflowRepository: Config_exports.string("workflow-repository").pipe(
     Config_exports.mapAttempt((ownerAndRepo) => {

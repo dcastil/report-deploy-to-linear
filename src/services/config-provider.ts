@@ -56,6 +56,8 @@ export function getConfigProviderTest(json?: object) {
         ConfigProvider.fromJson({
             'github-token': 'github-test-token',
             'linear-token': 'lin_api_test-token',
+            'linear-comment-body':
+                'Deployed pull request [{{ pullRequest.title }}]({{ pullRequest.url }}) successfully!',
             'deployed-commit-sha': 'a9aa5911cc624d0ddd2ee81bcce00b932a437aea',
             'workflow-repository': 'dcastil/tailwind-merge',
             'workflow-file-name': 'npm-publish.yml',
