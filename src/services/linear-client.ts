@@ -86,13 +86,13 @@ interface IssueViewForAttachmentUrlQueryResponse {
 }
 
 const issueViewForAttachmentQuery = gql`
-    query IssueViewForAttachmentUrl($url: String!, $$commentBody: String!) {
+    query IssueViewForAttachmentUrl($url: String!, $commentBody: String!) {
         attachmentsForURL(url: $url) {
             nodes {
                 issue {
                     id
                     identifier
-                    comments(filter: { body: { eq: $commentBody } }, first: 1, , orderBy: createdAt) {
+                    comments(filter: { body: { eq: $commentBody } }, first: 1, orderBy: createdAt) {
                         nodes {
                             id
                         }
