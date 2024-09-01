@@ -1,4 +1,5 @@
 "use strict";
+console.log('Action started!');
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
