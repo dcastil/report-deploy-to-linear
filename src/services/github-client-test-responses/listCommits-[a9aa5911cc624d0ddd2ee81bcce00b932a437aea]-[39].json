@@ -1,0 +1,2993 @@
+{
+    "status": 200,
+    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits?sha=a9aa5911cc624d0ddd2ee81bcce00b932a437aea&per_page=39",
+    "headers": {
+        "<redacted>": true
+    },
+    "data": [
+        {
+            "sha": "a9aa5911cc624d0ddd2ee81bcce00b932a437aea",
+            "node_id": "C_kwDOFwVEvtoAKGE5YWE1OTExY2M2MjRkMGRkZDJlZTgxYmNjZTAwYjkzMmE0MzdhZWE",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-30T14:43:05Z"
+                },
+                "committer": {
+                    "name": "GitHub",
+                    "email": "<redacted>",
+                    "date": "2024-08-30T14:43:05Z"
+                },
+                "message": "Merge pull request #465 from dcastil/dependabot/npm_and_yarn/micromatch-4.0.8\n\nBump micromatch from 4.0.4 to 4.0.8",
+                "tree": {
+                    "sha": "750fdf051e6a965f3bb0123f86ba4ff9cf301827",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/750fdf051e6a965f3bb0123f86ba4ff9cf301827"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/a9aa5911cc624d0ddd2ee81bcce00b932a437aea",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a9aa5911cc624d0ddd2ee81bcce00b932a437aea",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/a9aa5911cc624d0ddd2ee81bcce00b932a437aea",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a9aa5911cc624d0ddd2ee81bcce00b932a437aea/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "web-flow",
+                "id": 19864447,
+                "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/web-flow",
+                "html_url": "https://github.com/web-flow",
+                "followers_url": "https://api.github.com/users/web-flow/followers",
+                "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                "repos_url": "https://api.github.com/users/web-flow/repos",
+                "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "0c74ac3cababfa706594629e5244995535ca70a1",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/0c74ac3cababfa706594629e5244995535ca70a1",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/0c74ac3cababfa706594629e5244995535ca70a1"
+                },
+                {
+                    "sha": "f2f72475f1b0c870fd7fea2f9716cd8c36603055",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/f2f72475f1b0c870fd7fea2f9716cd8c36603055",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/f2f72475f1b0c870fd7fea2f9716cd8c36603055"
+                }
+            ]
+        },
+        {
+            "sha": "f2f72475f1b0c870fd7fea2f9716cd8c36603055",
+            "node_id": "C_kwDOFwVEvtoAKGYyZjcyNDc1ZjFiMGM4NzBmZDdmZWEyZjk3MTZjZDhjMzY2MDMwNTU",
+            "commit": {
+                "author": {
+                    "name": "dependabot[bot]",
+                    "email": "<redacted>",
+                    "date": "2024-08-30T14:04:25Z"
+                },
+                "committer": {
+                    "name": "GitHub",
+                    "email": "<redacted>",
+                    "date": "2024-08-30T14:04:25Z"
+                },
+                "message": "Bump micromatch from 4.0.4 to 4.0.8\n\nBumps [micromatch](https://github.com/micromatch/micromatch) from 4.0.4 to 4.0.8.\n- [Release notes](https://github.com/micromatch/micromatch/releases)\n- [Changelog](https://github.com/micromatch/micromatch/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/micromatch/micromatch/compare/4.0.4...4.0.8)\n\n---\nupdated-dependencies:\n- dependency-name: micromatch\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+                "tree": {
+                    "sha": "750fdf051e6a965f3bb0123f86ba4ff9cf301827",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/750fdf051e6a965f3bb0123f86ba4ff9cf301827"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/f2f72475f1b0c870fd7fea2f9716cd8c36603055",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/f2f72475f1b0c870fd7fea2f9716cd8c36603055",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/f2f72475f1b0c870fd7fea2f9716cd8c36603055",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/f2f72475f1b0c870fd7fea2f9716cd8c36603055/comments",
+            "author": {
+                "login": "dependabot[bot]",
+                "id": 49699333,
+                "node_id": "MDM6Qm90NDk2OTkzMzM=",
+                "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+                "html_url": "https://github.com/apps/dependabot",
+                "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+                "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+                "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+                "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+                "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+                "type": "Bot",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "web-flow",
+                "id": 19864447,
+                "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/web-flow",
+                "html_url": "https://github.com/web-flow",
+                "followers_url": "https://api.github.com/users/web-flow/followers",
+                "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                "repos_url": "https://api.github.com/users/web-flow/repos",
+                "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "0c74ac3cababfa706594629e5244995535ca70a1",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/0c74ac3cababfa706594629e5244995535ca70a1",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/0c74ac3cababfa706594629e5244995535ca70a1"
+                }
+            ]
+        },
+        {
+            "sha": "0c74ac3cababfa706594629e5244995535ca70a1",
+            "node_id": "C_kwDOFwVEvtoAKDBjNzRhYzNjYWJhYmZhNzA2NTk0NjI5ZTUyNDQ5OTU1MzVjYTcwYTE",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:48:35Z"
+                },
+                "committer": {
+                    "name": "GitHub",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:48:35Z"
+                },
+                "message": "Merge pull request #461 from dcastil/other/switch-test-suite-to-vitest\n\nSwitch test suite to vitest",
+                "tree": {
+                    "sha": "eecc348efa3babeaf82cae959330ff262ef5c738",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/eecc348efa3babeaf82cae959330ff262ef5c738"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/0c74ac3cababfa706594629e5244995535ca70a1",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/0c74ac3cababfa706594629e5244995535ca70a1",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/0c74ac3cababfa706594629e5244995535ca70a1",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/0c74ac3cababfa706594629e5244995535ca70a1/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "web-flow",
+                "id": 19864447,
+                "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/web-flow",
+                "html_url": "https://github.com/web-flow",
+                "followers_url": "https://api.github.com/users/web-flow/followers",
+                "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                "repos_url": "https://api.github.com/users/web-flow/repos",
+                "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "1bed05d40bc8f053548fb85c40eeaac60e0234ef",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/1bed05d40bc8f053548fb85c40eeaac60e0234ef",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/1bed05d40bc8f053548fb85c40eeaac60e0234ef"
+                },
+                {
+                    "sha": "d4ef3acc754d1101288271ecedd08fcd2c6c2d6a",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/d4ef3acc754d1101288271ecedd08fcd2c6c2d6a",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/d4ef3acc754d1101288271ecedd08fcd2c6c2d6a"
+                }
+            ]
+        },
+        {
+            "sha": "d4ef3acc754d1101288271ecedd08fcd2c6c2d6a",
+            "node_id": "C_kwDOFwVEvtoAKGQ0ZWYzYWNjNzU0ZDExMDEyODgyNzFlY2VkZDA4ZmNkMmM2YzJkNmE",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:43:31Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:43:31Z"
+                },
+                "message": "remove jest config",
+                "tree": {
+                    "sha": "eecc348efa3babeaf82cae959330ff262ef5c738",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/eecc348efa3babeaf82cae959330ff262ef5c738"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/d4ef3acc754d1101288271ecedd08fcd2c6c2d6a",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/d4ef3acc754d1101288271ecedd08fcd2c6c2d6a",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/d4ef3acc754d1101288271ecedd08fcd2c6c2d6a",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/d4ef3acc754d1101288271ecedd08fcd2c6c2d6a/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "63b0bd4f3a454a1bd5fe25a81bf50b7aeb3f9a45",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/63b0bd4f3a454a1bd5fe25a81bf50b7aeb3f9a45",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/63b0bd4f3a454a1bd5fe25a81bf50b7aeb3f9a45"
+                }
+            ]
+        },
+        {
+            "sha": "63b0bd4f3a454a1bd5fe25a81bf50b7aeb3f9a45",
+            "node_id": "C_kwDOFwVEvtoAKDYzYjBiZDRmM2E0NTRhMWJkNWZlMjVhODFiZjUwYjdhZWIzZjlhNDU",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:42:53Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:42:53Z"
+                },
+                "message": "set up which files are included in coverage reporting",
+                "tree": {
+                    "sha": "45be49e103c018d4a9dc9939cc9db41dc2e60cd8",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/45be49e103c018d4a9dc9939cc9db41dc2e60cd8"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/63b0bd4f3a454a1bd5fe25a81bf50b7aeb3f9a45",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/63b0bd4f3a454a1bd5fe25a81bf50b7aeb3f9a45",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/63b0bd4f3a454a1bd5fe25a81bf50b7aeb3f9a45",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/63b0bd4f3a454a1bd5fe25a81bf50b7aeb3f9a45/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "ec7f77527a23f85c0f72f8a347ecf16dea324ef2",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/ec7f77527a23f85c0f72f8a347ecf16dea324ef2",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/ec7f77527a23f85c0f72f8a347ecf16dea324ef2"
+                }
+            ]
+        },
+        {
+            "sha": "ec7f77527a23f85c0f72f8a347ecf16dea324ef2",
+            "node_id": "C_kwDOFwVEvtoAKGVjN2Y3NzUyN2EyM2Y4NWMwZjcyZjhhMzQ3ZWNmMTZkZWEzMjRlZjI",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:39:11Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:39:39Z"
+                },
+                "message": "move benchmark job to test workflow",
+                "tree": {
+                    "sha": "b2af6518c65b7fbe98ce19184bfc2d0db2e3944d",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/b2af6518c65b7fbe98ce19184bfc2d0db2e3944d"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/ec7f77527a23f85c0f72f8a347ecf16dea324ef2",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/ec7f77527a23f85c0f72f8a347ecf16dea324ef2",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/ec7f77527a23f85c0f72f8a347ecf16dea324ef2",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/ec7f77527a23f85c0f72f8a347ecf16dea324ef2/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "af58d9eebdc4f488c44d68f4d217e111b1bdf167",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/af58d9eebdc4f488c44d68f4d217e111b1bdf167",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/af58d9eebdc4f488c44d68f4d217e111b1bdf167"
+                }
+            ]
+        },
+        {
+            "sha": "af58d9eebdc4f488c44d68f4d217e111b1bdf167",
+            "node_id": "C_kwDOFwVEvtoAKGFmNThkOWVlYmRjNGY0ODhjNDRkNjhmNGQyMTdlMTExYjFiZGYxNjc",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:35:03Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:35:03Z"
+                },
+                "message": "remove run option from vitest calls\n\nit is added automatically in CI environment",
+                "tree": {
+                    "sha": "0b89dd150a4074076c09e5f037f17677bc46a92a",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/0b89dd150a4074076c09e5f037f17677bc46a92a"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/af58d9eebdc4f488c44d68f4d217e111b1bdf167",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/af58d9eebdc4f488c44d68f4d217e111b1bdf167",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/af58d9eebdc4f488c44d68f4d217e111b1bdf167",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/af58d9eebdc4f488c44d68f4d217e111b1bdf167/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "c5e6bfc1ae300f30cb4a13512f53207bfcc3eaba",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/c5e6bfc1ae300f30cb4a13512f53207bfcc3eaba",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/c5e6bfc1ae300f30cb4a13512f53207bfcc3eaba"
+                }
+            ]
+        },
+        {
+            "sha": "c5e6bfc1ae300f30cb4a13512f53207bfcc3eaba",
+            "node_id": "C_kwDOFwVEvtoAKGM1ZTZiZmMxYWUzMDBmMzBjYjRhMTM1MTJmNTMyMDdiZmNjM2VhYmE",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:32:31Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:32:31Z"
+                },
+                "message": "small improvement",
+                "tree": {
+                    "sha": "48b2b04dbf510105a18064f7ba5243eac672a357",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/48b2b04dbf510105a18064f7ba5243eac672a357"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/c5e6bfc1ae300f30cb4a13512f53207bfcc3eaba",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/c5e6bfc1ae300f30cb4a13512f53207bfcc3eaba",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/c5e6bfc1ae300f30cb4a13512f53207bfcc3eaba",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/c5e6bfc1ae300f30cb4a13512f53207bfcc3eaba/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "f7fa54234fc4d7f003de90089c84e71393216cc7",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/f7fa54234fc4d7f003de90089c84e71393216cc7",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/f7fa54234fc4d7f003de90089c84e71393216cc7"
+                }
+            ]
+        },
+        {
+            "sha": "f7fa54234fc4d7f003de90089c84e71393216cc7",
+            "node_id": "C_kwDOFwVEvtoAKGY3ZmE1NDIzNGZjNGQ3ZjAwM2RlOTAwODljODRlNzEzOTMyMTZjYzc",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:24:53Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:24:53Z"
+                },
+                "message": "remove all hooks from benchmark suite to make it behave the same locally as in Codspeed",
+                "tree": {
+                    "sha": "db77fefa86f987eb829204785a981ef4c9d20a99",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/db77fefa86f987eb829204785a981ef4c9d20a99"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/f7fa54234fc4d7f003de90089c84e71393216cc7",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/f7fa54234fc4d7f003de90089c84e71393216cc7",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/f7fa54234fc4d7f003de90089c84e71393216cc7",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/f7fa54234fc4d7f003de90089c84e71393216cc7/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "a7fb764f6bb51e07f67720b4ecf264a27726c9b4",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a7fb764f6bb51e07f67720b4ecf264a27726c9b4",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/a7fb764f6bb51e07f67720b4ecf264a27726c9b4"
+                }
+            ]
+        },
+        {
+            "sha": "a7fb764f6bb51e07f67720b4ecf264a27726c9b4",
+            "node_id": "C_kwDOFwVEvtoAKGE3ZmI3NjRmNmJiNTFlMDdmNjc3MjBiNGVjZjI2NGEyNzcyNmM5YjQ",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:14:53Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T16:14:53Z"
+                },
+                "message": "add temporary instrumentation to benchmark",
+                "tree": {
+                    "sha": "eec7bf75d0248857193ceab01a22b46650bae56c",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/eec7bf75d0248857193ceab01a22b46650bae56c"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/a7fb764f6bb51e07f67720b4ecf264a27726c9b4",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a7fb764f6bb51e07f67720b4ecf264a27726c9b4",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/a7fb764f6bb51e07f67720b4ecf264a27726c9b4",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a7fb764f6bb51e07f67720b4ecf264a27726c9b4/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "e54289bb8406a6a0d0d18cdb5f5292bd2cd84d8e",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/e54289bb8406a6a0d0d18cdb5f5292bd2cd84d8e",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/e54289bb8406a6a0d0d18cdb5f5292bd2cd84d8e"
+                }
+            ]
+        },
+        {
+            "sha": "e54289bb8406a6a0d0d18cdb5f5292bd2cd84d8e",
+            "node_id": "C_kwDOFwVEvtoAKGU1NDI4OWJiODQwNmE2YTBkMGQxOGNkYjVmNTI5MmJkMmNkODRkOGU",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T15:51:46Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T15:51:46Z"
+                },
+                "message": "run bench in Vite before running it with CodSped",
+                "tree": {
+                    "sha": "507d48d17a1d5e1c1270a704e051becac91ec1b0",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/507d48d17a1d5e1c1270a704e051becac91ec1b0"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/e54289bb8406a6a0d0d18cdb5f5292bd2cd84d8e",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/e54289bb8406a6a0d0d18cdb5f5292bd2cd84d8e",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/e54289bb8406a6a0d0d18cdb5f5292bd2cd84d8e",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/e54289bb8406a6a0d0d18cdb5f5292bd2cd84d8e/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "807658d58ea007e376bc43c65b89c9e4b658d6eb",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/807658d58ea007e376bc43c65b89c9e4b658d6eb",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/807658d58ea007e376bc43c65b89c9e4b658d6eb"
+                }
+            ]
+        },
+        {
+            "sha": "807658d58ea007e376bc43c65b89c9e4b658d6eb",
+            "node_id": "C_kwDOFwVEvtoAKDgwNzY1OGQ1OGVhMDA3ZTM3NmJjNDNjNjViODljOWU0YjY1OGQ2ZWI",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T15:46:35Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T15:46:35Z"
+                },
+                "message": "fix beforeEach hook not working",
+                "tree": {
+                    "sha": "222062f91206eaeedd4e2d508ec9325bc743093a",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/222062f91206eaeedd4e2d508ec9325bc743093a"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/807658d58ea007e376bc43c65b89c9e4b658d6eb",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/807658d58ea007e376bc43c65b89c9e4b658d6eb",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/807658d58ea007e376bc43c65b89c9e4b658d6eb",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/807658d58ea007e376bc43c65b89c9e4b658d6eb/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "a7bbb9b0032b6e79a11d52daba2e5513c02fa18d",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a7bbb9b0032b6e79a11d52daba2e5513c02fa18d",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/a7bbb9b0032b6e79a11d52daba2e5513c02fa18d"
+                }
+            ]
+        },
+        {
+            "sha": "a7bbb9b0032b6e79a11d52daba2e5513c02fa18d",
+            "node_id": "C_kwDOFwVEvtoAKGE3YmJiOWIwMDMyYjZlNzlhMTFkNTJkYWJhMmU1NTEzYzAyZmExOGQ",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T15:39:58Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T15:39:58Z"
+                },
+                "message": "wrap benchmark suite in describe call again",
+                "tree": {
+                    "sha": "bf6fe6ed2a7081bd4abe0155e190aa9b44d9d600",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/bf6fe6ed2a7081bd4abe0155e190aa9b44d9d600"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/a7bbb9b0032b6e79a11d52daba2e5513c02fa18d",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a7bbb9b0032b6e79a11d52daba2e5513c02fa18d",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/a7bbb9b0032b6e79a11d52daba2e5513c02fa18d",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a7bbb9b0032b6e79a11d52daba2e5513c02fa18d/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "453c49857117ea364ee7e533e93182b3c7a36fab",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/453c49857117ea364ee7e533e93182b3c7a36fab",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/453c49857117ea364ee7e533e93182b3c7a36fab"
+                }
+            ]
+        },
+        {
+            "sha": "453c49857117ea364ee7e533e93182b3c7a36fab",
+            "node_id": "C_kwDOFwVEvtoAKDQ1M2M0OTg1NzExN2VhMzY0ZWU3ZTUzM2U5MzE4MmIzYzdhMzZmYWI",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T15:37:38Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T15:37:38Z"
+                },
+                "message": "fix test suite call",
+                "tree": {
+                    "sha": "01b0dc661d5223a54b698c8ec673e2055633a0cb",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/01b0dc661d5223a54b698c8ec673e2055633a0cb"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/453c49857117ea364ee7e533e93182b3c7a36fab",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/453c49857117ea364ee7e533e93182b3c7a36fab",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/453c49857117ea364ee7e533e93182b3c7a36fab",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/453c49857117ea364ee7e533e93182b3c7a36fab/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "4d164e64854c956fcfcec8bfa4fa6d2a94216a16",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/4d164e64854c956fcfcec8bfa4fa6d2a94216a16",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/4d164e64854c956fcfcec8bfa4fa6d2a94216a16"
+                }
+            ]
+        },
+        {
+            "sha": "4d164e64854c956fcfcec8bfa4fa6d2a94216a16",
+            "node_id": "C_kwDOFwVEvtoAKDRkMTY0ZTY0ODU0Yzk1NmZjZmNlYzhiZmE0ZmE2ZDJhOTQyMTZhMTY",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T15:28:59Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T15:28:59Z"
+                },
+                "message": "make twMerge reassignemnt run before every benchmark iteration run",
+                "tree": {
+                    "sha": "12edf03db8c244af2a35a8f497bcb8abee6cdff3",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/12edf03db8c244af2a35a8f497bcb8abee6cdff3"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/4d164e64854c956fcfcec8bfa4fa6d2a94216a16",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/4d164e64854c956fcfcec8bfa4fa6d2a94216a16",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/4d164e64854c956fcfcec8bfa4fa6d2a94216a16",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/4d164e64854c956fcfcec8bfa4fa6d2a94216a16/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "57cd505f2d4bb92640da17b8382bdb2eba0645bd",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/57cd505f2d4bb92640da17b8382bdb2eba0645bd",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/57cd505f2d4bb92640da17b8382bdb2eba0645bd"
+                }
+            ]
+        },
+        {
+            "sha": "57cd505f2d4bb92640da17b8382bdb2eba0645bd",
+            "node_id": "C_kwDOFwVEvtoAKDU3Y2Q1MDVmMmQ0YmI5MjY0MGRhMTdiODM4MmJkYjJlYmEwNjQ1YmQ",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:30:38Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:30:38Z"
+                },
+                "message": "remove Jest-specific devDependencies",
+                "tree": {
+                    "sha": "b537629a856519c666fa61a03b07367185e97268",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/b537629a856519c666fa61a03b07367185e97268"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/57cd505f2d4bb92640da17b8382bdb2eba0645bd",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/57cd505f2d4bb92640da17b8382bdb2eba0645bd",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/57cd505f2d4bb92640da17b8382bdb2eba0645bd",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/57cd505f2d4bb92640da17b8382bdb2eba0645bd/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "a9e45a76b4ebd14547c82786d4efe954a8eb3cfb",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a9e45a76b4ebd14547c82786d4efe954a8eb3cfb",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/a9e45a76b4ebd14547c82786d4efe954a8eb3cfb"
+                }
+            ]
+        },
+        {
+            "sha": "a9e45a76b4ebd14547c82786d4efe954a8eb3cfb",
+            "node_id": "C_kwDOFwVEvtoAKGE5ZTQ1YTc2YjRlYmQxNDU0N2M4Mjc4NmQ0ZWZlOTU0YThlYjNjZmI",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:29:04Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:29:04Z"
+                },
+                "message": "change test scripts to vitest",
+                "tree": {
+                    "sha": "2e86ed516387f4377d751d070f9821a472d825f6",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/2e86ed516387f4377d751d070f9821a472d825f6"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/a9e45a76b4ebd14547c82786d4efe954a8eb3cfb",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a9e45a76b4ebd14547c82786d4efe954a8eb3cfb",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/a9e45a76b4ebd14547c82786d4efe954a8eb3cfb",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a9e45a76b4ebd14547c82786d4efe954a8eb3cfb/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "c41986f4848be9881bca92c0c693549a7bda3bdf",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/c41986f4848be9881bca92c0c693549a7bda3bdf",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/c41986f4848be9881bca92c0c693549a7bda3bdf"
+                }
+            ]
+        },
+        {
+            "sha": "c41986f4848be9881bca92c0c693549a7bda3bdf",
+            "node_id": "C_kwDOFwVEvtoAKGM0MTk4NmY0ODQ4YmU5ODgxYmNhOTJjMGM2OTM1NDlhN2JkYTNiZGY",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:28:37Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:28:37Z"
+                },
+                "message": "move benchmarks into tests directory",
+                "tree": {
+                    "sha": "0f006becdd776d6dc595cd41bac083cf2bcd67b1",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/0f006becdd776d6dc595cd41bac083cf2bcd67b1"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/c41986f4848be9881bca92c0c693549a7bda3bdf",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/c41986f4848be9881bca92c0c693549a7bda3bdf",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/c41986f4848be9881bca92c0c693549a7bda3bdf",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/c41986f4848be9881bca92c0c693549a7bda3bdf/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "a5c1d1dad237b9318ba6b764843f7d09e5661071",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a5c1d1dad237b9318ba6b764843f7d09e5661071",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/a5c1d1dad237b9318ba6b764843f7d09e5661071"
+                }
+            ]
+        },
+        {
+            "sha": "a5c1d1dad237b9318ba6b764843f7d09e5661071",
+            "node_id": "C_kwDOFwVEvtoAKGE1YzFkMWRhZDIzN2I5MzE4YmE2Yjc2NDg0M2Y3ZDA5ZTU2NjEwNzE",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:28:21Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:28:21Z"
+                },
+                "message": "migrate test suite to vitest",
+                "tree": {
+                    "sha": "c2d5611cff83a21ba1a19be1142a8c4274123010",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/c2d5611cff83a21ba1a19be1142a8c4274123010"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/a5c1d1dad237b9318ba6b764843f7d09e5661071",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a5c1d1dad237b9318ba6b764843f7d09e5661071",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/a5c1d1dad237b9318ba6b764843f7d09e5661071",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a5c1d1dad237b9318ba6b764843f7d09e5661071/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "bca0970f495a8b45dfbafcd18257cdcbd68788e5",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/bca0970f495a8b45dfbafcd18257cdcbd68788e5",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/bca0970f495a8b45dfbafcd18257cdcbd68788e5"
+                }
+            ]
+        },
+        {
+            "sha": "bca0970f495a8b45dfbafcd18257cdcbd68788e5",
+            "node_id": "C_kwDOFwVEvtoAKGJjYTA5NzBmNDk1YThiNDVkZmJhZmNkMTgyNTdjZGNiZDY4Nzg4ZTU",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:27:41Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:27:41Z"
+                },
+                "message": "remove Jest-specific ESLint rules",
+                "tree": {
+                    "sha": "c57ced1bfc4cd7fc61069eeec58036ec310df27e",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/c57ced1bfc4cd7fc61069eeec58036ec310df27e"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/bca0970f495a8b45dfbafcd18257cdcbd68788e5",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/bca0970f495a8b45dfbafcd18257cdcbd68788e5",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/bca0970f495a8b45dfbafcd18257cdcbd68788e5",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/bca0970f495a8b45dfbafcd18257cdcbd68788e5/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "c5b4b8c9ff0a6e2152b54059c1654a8ed4292be0",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/c5b4b8c9ff0a6e2152b54059c1654a8ed4292be0",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/c5b4b8c9ff0a6e2152b54059c1654a8ed4292be0"
+                }
+            ]
+        },
+        {
+            "sha": "c5b4b8c9ff0a6e2152b54059c1654a8ed4292be0",
+            "node_id": "C_kwDOFwVEvtoAKGM1YjRiOGM5ZmYwYTZlMjE1MmI1NDA1OWMxNjU0YThlZDQyOTJiZTA",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:20:34Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T12:20:34Z"
+                },
+                "message": "add vitest types to vitest config",
+                "tree": {
+                    "sha": "4b0ba0666b6f24f16ec8181cbc83a812027876a9",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/4b0ba0666b6f24f16ec8181cbc83a812027876a9"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/c5b4b8c9ff0a6e2152b54059c1654a8ed4292be0",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/c5b4b8c9ff0a6e2152b54059c1654a8ed4292be0",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/c5b4b8c9ff0a6e2152b54059c1654a8ed4292be0",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/c5b4b8c9ff0a6e2152b54059c1654a8ed4292be0/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "39d396a7f0b61e028ca0ce757d586c2f60056c12",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/39d396a7f0b61e028ca0ce757d586c2f60056c12",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/39d396a7f0b61e028ca0ce757d586c2f60056c12"
+                }
+            ]
+        },
+        {
+            "sha": "39d396a7f0b61e028ca0ce757d586c2f60056c12",
+            "node_id": "C_kwDOFwVEvtoAKDM5ZDM5NmE3ZjBiNjFlMDI4Y2EwY2U3NTdkNTg2YzJmNjAwNTZjMTI",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T10:56:04Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T10:56:04Z"
+                },
+                "message": "move vitest config to scripts directory",
+                "tree": {
+                    "sha": "32d5f46ae218d45ee97ece96acfc88bb71023a73",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/32d5f46ae218d45ee97ece96acfc88bb71023a73"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/39d396a7f0b61e028ca0ce757d586c2f60056c12",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/39d396a7f0b61e028ca0ce757d586c2f60056c12",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/39d396a7f0b61e028ca0ce757d586c2f60056c12",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/39d396a7f0b61e028ca0ce757d586c2f60056c12/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "4c256484c87b982ccb7d2f021b8ecf5de367bc27",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/4c256484c87b982ccb7d2f021b8ecf5de367bc27",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/4c256484c87b982ccb7d2f021b8ecf5de367bc27"
+                }
+            ]
+        },
+        {
+            "sha": "4c256484c87b982ccb7d2f021b8ecf5de367bc27",
+            "node_id": "C_kwDOFwVEvtoAKDRjMjU2NDg0Yzg3Yjk4MmNjYjdkMmYwMjFiOGVjZjVkZTM2N2JjMjc",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T10:51:17Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T10:51:17Z"
+                },
+                "message": "make benchmark workflow singular",
+                "tree": {
+                    "sha": "54ae8205ac7030cfb258df3262d131020a9db7e4",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/54ae8205ac7030cfb258df3262d131020a9db7e4"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/4c256484c87b982ccb7d2f021b8ecf5de367bc27",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/4c256484c87b982ccb7d2f021b8ecf5de367bc27",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/4c256484c87b982ccb7d2f021b8ecf5de367bc27",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/4c256484c87b982ccb7d2f021b8ecf5de367bc27/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "633e20b9c08438a7dd940727c07251ebe3bebadb",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/633e20b9c08438a7dd940727c07251ebe3bebadb",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/633e20b9c08438a7dd940727c07251ebe3bebadb"
+                }
+            ]
+        },
+        {
+            "sha": "633e20b9c08438a7dd940727c07251ebe3bebadb",
+            "node_id": "C_kwDOFwVEvtoAKDYzM2UyMGI5YzA4NDM4YTdkZDk0MDcyN2MwNzI1MWViZTNiZWJhZGI",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T10:03:11Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T10:03:11Z"
+                },
+                "message": "improve ESLint rule import/no-default-export",
+                "tree": {
+                    "sha": "e137ccfe14c09babd457abd559f457a4a915a1b3",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/e137ccfe14c09babd457abd559f457a4a915a1b3"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/633e20b9c08438a7dd940727c07251ebe3bebadb",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/633e20b9c08438a7dd940727c07251ebe3bebadb",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/633e20b9c08438a7dd940727c07251ebe3bebadb",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/633e20b9c08438a7dd940727c07251ebe3bebadb/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "1bed05d40bc8f053548fb85c40eeaac60e0234ef",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/1bed05d40bc8f053548fb85c40eeaac60e0234ef",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/1bed05d40bc8f053548fb85c40eeaac60e0234ef"
+                }
+            ]
+        },
+        {
+            "sha": "1bed05d40bc8f053548fb85c40eeaac60e0234ef",
+            "node_id": "C_kwDOFwVEvtoAKDFiZWQwNWQ0MGJjOGYwNTM1NDhmYjg1YzQwZWVhYWM2MGUwMjM0ZWY",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T09:29:18Z"
+                },
+                "committer": {
+                    "name": "GitHub",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T09:29:18Z"
+                },
+                "message": "Merge pull request #460 from dcastil/dependabot/npm_and_yarn/axios-1.7.4\n\nBump axios from 1.7.3 to 1.7.4",
+                "tree": {
+                    "sha": "a566c1367c9ad7b06a9f3767e2c82bb5dcf8ce42",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/a566c1367c9ad7b06a9f3767e2c82bb5dcf8ce42"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/1bed05d40bc8f053548fb85c40eeaac60e0234ef",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/1bed05d40bc8f053548fb85c40eeaac60e0234ef",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/1bed05d40bc8f053548fb85c40eeaac60e0234ef",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/1bed05d40bc8f053548fb85c40eeaac60e0234ef/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "web-flow",
+                "id": 19864447,
+                "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/web-flow",
+                "html_url": "https://github.com/web-flow",
+                "followers_url": "https://api.github.com/users/web-flow/followers",
+                "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                "repos_url": "https://api.github.com/users/web-flow/repos",
+                "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "34753fec69281e1f001a4129b6518b2e589eb28f",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/34753fec69281e1f001a4129b6518b2e589eb28f",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/34753fec69281e1f001a4129b6518b2e589eb28f"
+                },
+                {
+                    "sha": "54e6f1a4d8e9c037476b7c37013a13b781c41e73",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/54e6f1a4d8e9c037476b7c37013a13b781c41e73",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/54e6f1a4d8e9c037476b7c37013a13b781c41e73"
+                }
+            ]
+        },
+        {
+            "sha": "54e6f1a4d8e9c037476b7c37013a13b781c41e73",
+            "node_id": "C_kwDOFwVEvtoAKDU0ZTZmMWE0ZDhlOWMwMzc0NzZiN2MzNzAxM2ExM2I3ODFjNDFlNzM",
+            "commit": {
+                "author": {
+                    "name": "dependabot[bot]",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T09:27:27Z"
+                },
+                "committer": {
+                    "name": "GitHub",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T09:27:27Z"
+                },
+                "message": "Bump axios from 1.7.3 to 1.7.4\n\nBumps [axios](https://github.com/axios/axios) from 1.7.3 to 1.7.4.\n- [Release notes](https://github.com/axios/axios/releases)\n- [Changelog](https://github.com/axios/axios/blob/v1.x/CHANGELOG.md)\n- [Commits](https://github.com/axios/axios/compare/v1.7.3...v1.7.4)\n\n---\nupdated-dependencies:\n- dependency-name: axios\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+                "tree": {
+                    "sha": "a566c1367c9ad7b06a9f3767e2c82bb5dcf8ce42",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/a566c1367c9ad7b06a9f3767e2c82bb5dcf8ce42"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/54e6f1a4d8e9c037476b7c37013a13b781c41e73",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/54e6f1a4d8e9c037476b7c37013a13b781c41e73",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/54e6f1a4d8e9c037476b7c37013a13b781c41e73",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/54e6f1a4d8e9c037476b7c37013a13b781c41e73/comments",
+            "author": {
+                "login": "dependabot[bot]",
+                "id": 49699333,
+                "node_id": "MDM6Qm90NDk2OTkzMzM=",
+                "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+                "html_url": "https://github.com/apps/dependabot",
+                "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+                "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+                "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+                "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+                "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+                "type": "Bot",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "web-flow",
+                "id": 19864447,
+                "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/web-flow",
+                "html_url": "https://github.com/web-flow",
+                "followers_url": "https://api.github.com/users/web-flow/followers",
+                "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                "repos_url": "https://api.github.com/users/web-flow/repos",
+                "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "34753fec69281e1f001a4129b6518b2e589eb28f",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/34753fec69281e1f001a4129b6518b2e589eb28f",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/34753fec69281e1f001a4129b6518b2e589eb28f"
+                }
+            ]
+        },
+        {
+            "sha": "34753fec69281e1f001a4129b6518b2e589eb28f",
+            "node_id": "C_kwDOFwVEvtoAKDM0NzUzZmVjNjkyODFlMWYwMDFhNDEyOWI2NTE4YjJlNTg5ZWIyOGY",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T09:26:30Z"
+                },
+                "committer": {
+                    "name": "GitHub",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T09:26:30Z"
+                },
+                "message": "Merge pull request #455 from XantreDev/benchmarks\n\nImplemented benchmarks",
+                "tree": {
+                    "sha": "46157d2c131d55a85362f990081eb2c65f9efb0d",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/46157d2c131d55a85362f990081eb2c65f9efb0d"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/34753fec69281e1f001a4129b6518b2e589eb28f",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/34753fec69281e1f001a4129b6518b2e589eb28f",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/34753fec69281e1f001a4129b6518b2e589eb28f",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/34753fec69281e1f001a4129b6518b2e589eb28f/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "web-flow",
+                "id": 19864447,
+                "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/web-flow",
+                "html_url": "https://github.com/web-flow",
+                "followers_url": "https://api.github.com/users/web-flow/followers",
+                "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                "repos_url": "https://api.github.com/users/web-flow/repos",
+                "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "a72f2f474fbba41c9940d3c9737cd3ad431d68da",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a72f2f474fbba41c9940d3c9737cd3ad431d68da",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/a72f2f474fbba41c9940d3c9737cd3ad431d68da"
+                },
+                {
+                    "sha": "3d6525b1573bc77f6ec220537b3f3aab1be5f1db",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/3d6525b1573bc77f6ec220537b3f3aab1be5f1db",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/3d6525b1573bc77f6ec220537b3f3aab1be5f1db"
+                }
+            ]
+        },
+        {
+            "sha": "3d6525b1573bc77f6ec220537b3f3aab1be5f1db",
+            "node_id": "C_kwDOFwVEvtoAKDNkNjUyNWIxNTczYmM3N2Y2ZWMyMjA1MzdiM2YzYWFiMWJlNWYxZGI",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T09:20:28Z"
+                },
+                "committer": {
+                    "name": "GitHub",
+                    "email": "<redacted>",
+                    "date": "2024-08-18T09:20:28Z"
+                },
+                "message": "Rename codspeed.yml to benchmarks.yml",
+                "tree": {
+                    "sha": "46157d2c131d55a85362f990081eb2c65f9efb0d",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/46157d2c131d55a85362f990081eb2c65f9efb0d"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/3d6525b1573bc77f6ec220537b3f3aab1be5f1db",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/3d6525b1573bc77f6ec220537b3f3aab1be5f1db",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/3d6525b1573bc77f6ec220537b3f3aab1be5f1db",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/3d6525b1573bc77f6ec220537b3f3aab1be5f1db/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "web-flow",
+                "id": 19864447,
+                "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/web-flow",
+                "html_url": "https://github.com/web-flow",
+                "followers_url": "https://api.github.com/users/web-flow/followers",
+                "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                "repos_url": "https://api.github.com/users/web-flow/repos",
+                "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "6c5ed9ab8e9c740ca65c40520030ba1dfc9f1d9a",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/6c5ed9ab8e9c740ca65c40520030ba1dfc9f1d9a",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/6c5ed9ab8e9c740ca65c40520030ba1dfc9f1d9a"
+                }
+            ]
+        },
+        {
+            "sha": "6c5ed9ab8e9c740ca65c40520030ba1dfc9f1d9a",
+            "node_id": "C_kwDOFwVEvtoAKDZjNWVkOWFiOGU5Yzc0MGNhNjVjNDA1MjAwMzBiYTFkZmM5ZjFkOWE",
+            "commit": {
+                "author": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-17T20:08:55Z"
+                },
+                "committer": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-17T20:08:55Z"
+                },
+                "message": "fixed codspeed",
+                "tree": {
+                    "sha": "f6ffe1e276a6e68b84a93397a65681ee7b36ec89",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/f6ffe1e276a6e68b84a93397a65681ee7b36ec89"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/6c5ed9ab8e9c740ca65c40520030ba1dfc9f1d9a",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/6c5ed9ab8e9c740ca65c40520030ba1dfc9f1d9a",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/6c5ed9ab8e9c740ca65c40520030ba1dfc9f1d9a",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/6c5ed9ab8e9c740ca65c40520030ba1dfc9f1d9a/comments",
+            "author": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "08c8b089199698ad26aec14072f4022bc19579d6",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/08c8b089199698ad26aec14072f4022bc19579d6",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/08c8b089199698ad26aec14072f4022bc19579d6"
+                }
+            ]
+        },
+        {
+            "sha": "08c8b089199698ad26aec14072f4022bc19579d6",
+            "node_id": "C_kwDOFwVEvtoAKDA4YzhiMDg5MTk5Njk4YWQyNmFlYzE0MDcyZjQwMjJiYzE5NTc5ZDY",
+            "commit": {
+                "author": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-17T19:55:37Z"
+                },
+                "committer": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-17T19:55:37Z"
+                },
+                "message": "clean up",
+                "tree": {
+                    "sha": "003f57f8bc2f026c3114166abf7f7ce2253741c9",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/003f57f8bc2f026c3114166abf7f7ce2253741c9"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/08c8b089199698ad26aec14072f4022bc19579d6",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/08c8b089199698ad26aec14072f4022bc19579d6",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/08c8b089199698ad26aec14072f4022bc19579d6",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/08c8b089199698ad26aec14072f4022bc19579d6/comments",
+            "author": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "b66d84ff8c27c64fc34ba7fcf1286da441f025bc",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/b66d84ff8c27c64fc34ba7fcf1286da441f025bc",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/b66d84ff8c27c64fc34ba7fcf1286da441f025bc"
+                }
+            ]
+        },
+        {
+            "sha": "b66d84ff8c27c64fc34ba7fcf1286da441f025bc",
+            "node_id": "C_kwDOFwVEvtoAKGI2NmQ4NGZmOGMyN2M2NGZjMzRiYTdmY2YxMjg2ZGE0NDFmMDI1YmM",
+            "commit": {
+                "author": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-17T19:54:47Z"
+                },
+                "committer": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-17T19:54:47Z"
+                },
+                "message": "improve benchmarks",
+                "tree": {
+                    "sha": "6c5632f82e53510fe040525cdb98e42030c426cc",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/6c5632f82e53510fe040525cdb98e42030c426cc"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/b66d84ff8c27c64fc34ba7fcf1286da441f025bc",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/b66d84ff8c27c64fc34ba7fcf1286da441f025bc",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/b66d84ff8c27c64fc34ba7fcf1286da441f025bc",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/b66d84ff8c27c64fc34ba7fcf1286da441f025bc/comments",
+            "author": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "530d6d9b2fdfd8e68e7f87f54549a6be4f3d3847",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/530d6d9b2fdfd8e68e7f87f54549a6be4f3d3847",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/530d6d9b2fdfd8e68e7f87f54549a6be4f3d3847"
+                }
+            ]
+        },
+        {
+            "sha": "530d6d9b2fdfd8e68e7f87f54549a6be4f3d3847",
+            "node_id": "C_kwDOFwVEvtoAKDUzMGQ2ZDliMmZkZmQ4ZTY4ZTdmODdmNTQ1NDlhNmJlNGYzZDM4NDc",
+            "commit": {
+                "author": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-17T19:41:15Z"
+                },
+                "committer": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-17T19:41:15Z"
+                },
+                "message": "fix ci",
+                "tree": {
+                    "sha": "ed6b4f27abf08b3d1d270c9045679a3089abc54a",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/ed6b4f27abf08b3d1d270c9045679a3089abc54a"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/530d6d9b2fdfd8e68e7f87f54549a6be4f3d3847",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/530d6d9b2fdfd8e68e7f87f54549a6be4f3d3847",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/530d6d9b2fdfd8e68e7f87f54549a6be4f3d3847",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/530d6d9b2fdfd8e68e7f87f54549a6be4f3d3847/comments",
+            "author": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "a5129251f9b12bae90d16b209136d7a4e69a3d7c",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a5129251f9b12bae90d16b209136d7a4e69a3d7c",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/a5129251f9b12bae90d16b209136d7a4e69a3d7c"
+                }
+            ]
+        },
+        {
+            "sha": "a5129251f9b12bae90d16b209136d7a4e69a3d7c",
+            "node_id": "C_kwDOFwVEvtoAKGE1MTI5MjUxZjliMTJiYWU5MGQxNmIyMDkxMzZkN2E0ZTY5YTNkN2M",
+            "commit": {
+                "author": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-14T22:39:59Z"
+                },
+                "committer": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-14T22:39:59Z"
+                },
+                "message": "wip",
+                "tree": {
+                    "sha": "79095750557dd5fac524acce226a6cffb9816b8c",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/79095750557dd5fac524acce226a6cffb9816b8c"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/a5129251f9b12bae90d16b209136d7a4e69a3d7c",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a5129251f9b12bae90d16b209136d7a4e69a3d7c",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/a5129251f9b12bae90d16b209136d7a4e69a3d7c",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a5129251f9b12bae90d16b209136d7a4e69a3d7c/comments",
+            "author": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "46f41fa59e7f0882d2c4b01dec523ae3025d871e",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/46f41fa59e7f0882d2c4b01dec523ae3025d871e",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/46f41fa59e7f0882d2c4b01dec523ae3025d871e"
+                }
+            ]
+        },
+        {
+            "sha": "46f41fa59e7f0882d2c4b01dec523ae3025d871e",
+            "node_id": "C_kwDOFwVEvtoAKDQ2ZjQxZmE1OWU3ZjA4ODJkMmM0YjAxZGVjNTIzYWUzMDI1ZDg3MWU",
+            "commit": {
+                "author": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-13T08:34:12Z"
+                },
+                "committer": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-13T08:34:12Z"
+                },
+                "message": "removed tinybench",
+                "tree": {
+                    "sha": "8e41129d14a2688a9685771424a3b9ec82279552",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/8e41129d14a2688a9685771424a3b9ec82279552"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/46f41fa59e7f0882d2c4b01dec523ae3025d871e",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/46f41fa59e7f0882d2c4b01dec523ae3025d871e",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/46f41fa59e7f0882d2c4b01dec523ae3025d871e",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/46f41fa59e7f0882d2c4b01dec523ae3025d871e/comments",
+            "author": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "5541294521cd90111ba110c0b2079a3165abd8b4",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/5541294521cd90111ba110c0b2079a3165abd8b4",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/5541294521cd90111ba110c0b2079a3165abd8b4"
+                }
+            ]
+        },
+        {
+            "sha": "5541294521cd90111ba110c0b2079a3165abd8b4",
+            "node_id": "C_kwDOFwVEvtoAKDU1NDEyOTQ1MjFjZDkwMTExYmExMTBjMGIyMDc5YTMxNjVhYmQ4YjQ",
+            "commit": {
+                "author": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-13T08:25:17Z"
+                },
+                "committer": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-13T08:25:17Z"
+                },
+                "message": "fix local results",
+                "tree": {
+                    "sha": "728058a56bb3afdc0e3a4e2d18b26ff808248503",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/728058a56bb3afdc0e3a4e2d18b26ff808248503"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/5541294521cd90111ba110c0b2079a3165abd8b4",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/5541294521cd90111ba110c0b2079a3165abd8b4",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/5541294521cd90111ba110c0b2079a3165abd8b4",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/5541294521cd90111ba110c0b2079a3165abd8b4/comments",
+            "author": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "061688b71b8dcb69e6e5e5d71c4b0deab2593bb3",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/061688b71b8dcb69e6e5e5d71c4b0deab2593bb3",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/061688b71b8dcb69e6e5e5d71c4b0deab2593bb3"
+                }
+            ]
+        },
+        {
+            "sha": "061688b71b8dcb69e6e5e5d71c4b0deab2593bb3",
+            "node_id": "C_kwDOFwVEvtoAKDA2MTY4OGI3MWI4ZGNiNjllNmU1ZTVkNzFjNGIwZGVhYjI1OTNiYjM",
+            "commit": {
+                "author": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-13T08:19:12Z"
+                },
+                "committer": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-13T08:19:12Z"
+                },
+                "message": "vitests",
+                "tree": {
+                    "sha": "b73127810cdea2cff8494268020b49c303df443b",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/b73127810cdea2cff8494268020b49c303df443b"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/061688b71b8dcb69e6e5e5d71c4b0deab2593bb3",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/061688b71b8dcb69e6e5e5d71c4b0deab2593bb3",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/061688b71b8dcb69e6e5e5d71c4b0deab2593bb3",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/061688b71b8dcb69e6e5e5d71c4b0deab2593bb3/comments",
+            "author": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "b89b27e8a954e798f599871e82b04dadae096a32",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/b89b27e8a954e798f599871e82b04dadae096a32",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/b89b27e8a954e798f599871e82b04dadae096a32"
+                }
+            ]
+        },
+        {
+            "sha": "b89b27e8a954e798f599871e82b04dadae096a32",
+            "node_id": "C_kwDOFwVEvtoAKGI4OWIyN2U4YTk1NGU3OThmNTk5ODcxZTgyYjA0ZGFkYWUwOTZhMzI",
+            "commit": {
+                "author": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-11T22:28:22Z"
+                },
+                "committer": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-13T08:17:30Z"
+                },
+                "message": "fixed lint",
+                "tree": {
+                    "sha": "4bd737f0c82fb7892eefe091454d6e6cec9d10d5",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/4bd737f0c82fb7892eefe091454d6e6cec9d10d5"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/b89b27e8a954e798f599871e82b04dadae096a32",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/b89b27e8a954e798f599871e82b04dadae096a32",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/b89b27e8a954e798f599871e82b04dadae096a32",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/b89b27e8a954e798f599871e82b04dadae096a32/comments",
+            "author": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "f41ba94aa8241f5edd583f43a631df773939e630",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/f41ba94aa8241f5edd583f43a631df773939e630",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/f41ba94aa8241f5edd583f43a631df773939e630"
+                }
+            ]
+        },
+        {
+            "sha": "f41ba94aa8241f5edd583f43a631df773939e630",
+            "node_id": "C_kwDOFwVEvtoAKGY0MWJhOTRhYTgyNDFmNWVkZDU4M2Y0M2E2MzFkZjc3MzkzOWU2MzA",
+            "commit": {
+                "author": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-11T22:23:54Z"
+                },
+                "committer": {
+                    "name": "XantreDev",
+                    "email": "<redacted>",
+                    "date": "2024-08-13T08:17:30Z"
+                },
+                "message": "implemented benchmarks",
+                "tree": {
+                    "sha": "0684cd3b5f1a6131c8a44e32c34627c35d18b795",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/0684cd3b5f1a6131c8a44e32c34627c35d18b795"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/f41ba94aa8241f5edd583f43a631df773939e630",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/f41ba94aa8241f5edd583f43a631df773939e630",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/f41ba94aa8241f5edd583f43a631df773939e630",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/f41ba94aa8241f5edd583f43a631df773939e630/comments",
+            "author": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "XantreDev",
+                "id": 57757211,
+                "node_id": "MDQ6VXNlcjU3NzU3MjEx",
+                "avatar_url": "https://avatars.githubusercontent.com/u/57757211?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/XantreDev",
+                "html_url": "https://github.com/XantreDev",
+                "followers_url": "https://api.github.com/users/XantreDev/followers",
+                "following_url": "https://api.github.com/users/XantreDev/following{/other_user}",
+                "gists_url": "https://api.github.com/users/XantreDev/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/XantreDev/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/XantreDev/subscriptions",
+                "organizations_url": "https://api.github.com/users/XantreDev/orgs",
+                "repos_url": "https://api.github.com/users/XantreDev/repos",
+                "events_url": "https://api.github.com/users/XantreDev/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/XantreDev/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "a72f2f474fbba41c9940d3c9737cd3ad431d68da",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a72f2f474fbba41c9940d3c9737cd3ad431d68da",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/a72f2f474fbba41c9940d3c9737cd3ad431d68da"
+                }
+            ]
+        },
+        {
+            "sha": "a72f2f474fbba41c9940d3c9737cd3ad431d68da",
+            "node_id": "C_kwDOFwVEvtoAKGE3MmYyZjQ3NGZiYmE0MWM5OTQwZDNjOTczN2NkM2FkNDMxZDY4ZGE",
+            "commit": {
+                "author": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-12T18:27:31Z"
+                },
+                "committer": {
+                    "name": "Dany Castillo",
+                    "email": "<redacted>",
+                    "date": "2024-08-12T18:27:31Z"
+                },
+                "message": "v2.5.2",
+                "tree": {
+                    "sha": "8f1f5c3d73481ab2c5a713de9e1ac7152fbffdfb",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/trees/8f1f5c3d73481ab2c5a713de9e1ac7152fbffdfb"
+                },
+                "url": "https://api.github.com/repos/dcastil/tailwind-merge/git/commits/a72f2f474fbba41c9940d3c9737cd3ad431d68da",
+                "comment_count": 0,
+                "verification": {
+                    "<redacted>": true
+                }
+            },
+            "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a72f2f474fbba41c9940d3c9737cd3ad431d68da",
+            "html_url": "https://github.com/dcastil/tailwind-merge/commit/a72f2f474fbba41c9940d3c9737cd3ad431d68da",
+            "comments_url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/a72f2f474fbba41c9940d3c9737cd3ad431d68da/comments",
+            "author": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "committer": {
+                "login": "dcastil",
+                "id": 31006608,
+                "node_id": "MDQ6VXNlcjMxMDA2NjA4",
+                "avatar_url": "https://avatars.githubusercontent.com/u/31006608?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/dcastil",
+                "html_url": "https://github.com/dcastil",
+                "followers_url": "https://api.github.com/users/dcastil/followers",
+                "following_url": "https://api.github.com/users/dcastil/following{/other_user}",
+                "gists_url": "https://api.github.com/users/dcastil/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/dcastil/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/dcastil/subscriptions",
+                "organizations_url": "https://api.github.com/users/dcastil/orgs",
+                "repos_url": "https://api.github.com/users/dcastil/repos",
+                "events_url": "https://api.github.com/users/dcastil/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/dcastil/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "parents": [
+                {
+                    "sha": "0f0f53e1b3d930b21560eea24b467e0870854f52",
+                    "url": "https://api.github.com/repos/dcastil/tailwind-merge/commits/0f0f53e1b3d930b21560eea24b467e0870854f52",
+                    "html_url": "https://github.com/dcastil/tailwind-merge/commit/0f0f53e1b3d930b21560eea24b467e0870854f52"
+                }
+            ]
+        }
+    ]
+}
