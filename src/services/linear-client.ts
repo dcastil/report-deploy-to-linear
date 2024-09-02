@@ -109,20 +109,18 @@ export function getLinearClientTest(client?: Partial<Effect.Effect.Success<typeo
             getIssueViewForAttachmentUrl: (url: string, commentStartsWith: string) =>
                 Effect.promise(() =>
                     Promise.resolve({
-                        data: {
-                            attachmentsForURL: {
-                                nodes: [
-                                    {
-                                        issue: {
-                                            id: '87d696f1-4467-4f35-843e-c62b31b26' + url.slice(-3),
-                                            identifier: 'TEST-' + url.slice(-3),
-                                            comments: {
-                                                nodes: [],
-                                            },
+                        attachmentsForURL: {
+                            nodes: [
+                                {
+                                    issue: {
+                                        id: '87d696f1-4467-4f35-843e-c62b31b26' + url.slice(-3),
+                                        identifier: 'TEST-' + url.slice(-3),
+                                        comments: {
+                                            nodes: [],
                                         },
                                     },
-                                ],
-                            },
+                                },
+                            ],
                         },
                     }),
                 ),
