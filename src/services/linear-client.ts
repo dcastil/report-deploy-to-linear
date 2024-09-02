@@ -2,6 +2,7 @@ import { LinearClient as LinearSdkClient } from '@linear/sdk'
 import { Context, Effect, Layer, Redacted } from 'effect'
 
 import { transformToActionError } from '../error-handling'
+import { tapLogTrace } from '../utils'
 import { Inputs } from './inputs'
 
 export class LinearClient extends Context.Tag('LinearClient')<
@@ -55,7 +56,7 @@ const linearClient = Inputs.pipe(
                     catch: transformToActionError(
                         `Could not get issue view for attachment URL ${url}`,
                     ),
-                }),
+                }).pipe(tapLogTrace('Linear query IssueViewForAttachmentUrl response')),
 
             createComment: inputs.isDryRun ? createCommentDryRun : createCommentLive,
         }

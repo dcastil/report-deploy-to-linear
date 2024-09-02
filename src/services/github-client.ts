@@ -4,6 +4,7 @@ import * as github from '@actions/github'
 import { Context, Effect, Layer, Redacted } from 'effect'
 
 import { ActionError, transformToActionError } from '../error-handling'
+import { tapLogTrace } from '../utils'
 import { Inputs } from './inputs'
 
 export class GithubClient extends Context.Tag('GithubClient')<
@@ -25,7 +26,7 @@ const githubClient = Inputs.pipe(
                             per_page: 10,
                         }),
                     catch: transformToActionError('Could not list workflow runs'),
-                }),
+                }).pipe(tapLogTrace('GitHub listWorkflowRuns response')),
 
             listJobsForWorkflowRun: (runId: number) =>
                 Effect.tryPromise({
@@ -35,7 +36,7 @@ const githubClient = Inputs.pipe(
                             run_id: runId,
                         }),
                     catch: transformToActionError(`Could not list jobs for workflow run ${runId}`),
-                }),
+                }).pipe(tapLogTrace(`GitHub listJobsForWorkflowRun with runId ${runId} response`)),
 
             compareToCurrentDeployCommit: (head: string) =>
                 Effect.tryPromise({
@@ -47,7 +48,9 @@ const githubClient = Inputs.pipe(
                     catch: transformToActionError(
                         `Could not compare commits ${inputs.deployedCommitSha}...${head}`,
                     ),
-                }),
+                }).pipe(
+                    tapLogTrace(`GitHub compareToCurrentDeployCommit with head ${head} response`),
+                ),
 
             listCommits: (sha: string, perPage?: number) =>
                 Effect.tryPromise({
@@ -58,7 +61,11 @@ const githubClient = Inputs.pipe(
                             per_page: perPage,
                         }),
                     catch: transformToActionError(`Could not list commits for SHA ${sha}`),
-                }),
+                }).pipe(
+                    tapLogTrace(
+                        `GitHub listCommits with sha ${sha} and perPage ${perPage} response`,
+                    ),
+                ),
 
             listPullRequestsAssociatedWithCommit: (commitSha: string) =>
                 Effect.tryPromise({
@@ -70,7 +77,11 @@ const githubClient = Inputs.pipe(
                     catch: transformToActionError(
                         `Could not list pull requests associated with commit ${commitSha}`,
                     ),
-                }),
+                }).pipe(
+                    tapLogTrace(
+                        `GitHub listPullRequestsAssociatedWithCommit with commitSha ${commitSha} response`,
+                    ),
+                ),
         } satisfies Record<string, (...args: any[]) => Effect.Effect<object, ActionError>>
     }),
 )

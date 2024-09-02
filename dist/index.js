@@ -35376,6 +35376,30 @@ Support boolean input list: \`true | True | TRUE | false | False | FALSE\``);
 });
 
 // node_modules/effect/dist/esm/Function.js
+var Function_exports = {};
+__export(Function_exports, {
+  SK: () => SK,
+  absurd: () => absurd,
+  apply: () => apply,
+  compose: () => compose,
+  constFalse: () => constFalse,
+  constNull: () => constNull,
+  constTrue: () => constTrue,
+  constUndefined: () => constUndefined,
+  constVoid: () => constVoid,
+  constant: () => constant,
+  dual: () => dual,
+  flip: () => flip,
+  flow: () => flow,
+  hole: () => hole,
+  identity: () => identity,
+  isFunction: () => isFunction,
+  pipe: () => pipe,
+  satisfies: () => satisfies,
+  tupled: () => tupled,
+  unsafeCoerce: () => unsafeCoerce,
+  untupled: () => untupled
+});
 var isFunction = (input) => typeof input === "function";
 var dual = function(arity, body) {
   if (typeof arity === "function") {
@@ -35438,12 +35462,23 @@ var dual = function(arity, body) {
       };
   }
 };
+var apply = (a) => (self2) => self2(a);
 var identity = (a) => a;
+var satisfies = () => (b) => b;
+var unsafeCoerce = identity;
 var constant = (value3) => () => value3;
 var constTrue = /* @__PURE__ */ constant(true);
 var constFalse = /* @__PURE__ */ constant(false);
+var constNull = /* @__PURE__ */ constant(null);
 var constUndefined = /* @__PURE__ */ constant(void 0);
 var constVoid = constUndefined;
+var flip = (f) => (...b) => (...a) => f(...a)(...b);
+var compose = /* @__PURE__ */ dual(2, (ab, bc) => (a) => bc(ab(a)));
+var absurd = (_) => {
+  throw new Error("Called `absurd` function which should be uncallable");
+};
+var tupled = (f) => (a) => f(...a);
+var untupled = (f) => (...a) => f(a);
 function pipe(a, ab, bc, cd, de, ef, fg, gh, hi) {
   switch (arguments.length) {
     case 1:
@@ -35473,6 +35508,47 @@ function pipe(a, ab, bc, cd, de, ef, fg, gh, hi) {
     }
   }
 }
+function flow(ab, bc, cd, de, ef, fg, gh, hi, ij) {
+  switch (arguments.length) {
+    case 1:
+      return ab;
+    case 2:
+      return function() {
+        return bc(ab.apply(this, arguments));
+      };
+    case 3:
+      return function() {
+        return cd(bc(ab.apply(this, arguments)));
+      };
+    case 4:
+      return function() {
+        return de(cd(bc(ab.apply(this, arguments))));
+      };
+    case 5:
+      return function() {
+        return ef(de(cd(bc(ab.apply(this, arguments)))));
+      };
+    case 6:
+      return function() {
+        return fg(ef(de(cd(bc(ab.apply(this, arguments))))));
+      };
+    case 7:
+      return function() {
+        return gh(fg(ef(de(cd(bc(ab.apply(this, arguments)))))));
+      };
+    case 8:
+      return function() {
+        return hi(gh(fg(ef(de(cd(bc(ab.apply(this, arguments))))))));
+      };
+    case 9:
+      return function() {
+        return ij(hi(gh(fg(ef(de(cd(bc(ab.apply(this, arguments)))))))));
+      };
+  }
+  return;
+}
+var hole = /* @__PURE__ */ unsafeCoerce(absurd);
+var SK = (_, b) => b;
 
 // node_modules/effect/dist/esm/Equivalence.js
 var make = (isEquivalent) => (self2, that) => self2 === that || isEquivalent(self2, that);
@@ -40013,7 +40089,7 @@ var step2 = (self2) => {
   return effect2;
 };
 var flatten4 = (self2) => flatMap7(self2, identity);
-var flip = (self2) => matchEffect(self2, {
+var flip2 = (self2) => matchEffect(self2, {
   onFailure: succeed,
   onSuccess: fail2
 });
@@ -42552,7 +42628,7 @@ var firstSuccessOf = (effects) => suspend(() => {
   }
   return pipe(tailNonEmpty2(list), reduce(headNonEmpty2(list), (left3, right3) => orElse(left3, () => right3)));
 });
-var flipWith = /* @__PURE__ */ dual(2, (self2, f) => flip(f(flip(self2))));
+var flipWith = /* @__PURE__ */ dual(2, (self2, f) => flip2(f(flip2(self2))));
 var match5 = /* @__PURE__ */ dual(2, (self2, options) => matchEffect(self2, {
   onFailure: (e) => succeed(options.onFailure(e)),
   onSuccess: (a) => succeed(options.onSuccess(a))
@@ -46219,7 +46295,7 @@ var runtimeFiberVariance = {
   /* c8 ignore next */
   _A: (_) => _
 };
-var absurd = (_) => {
+var absurd2 = (_) => {
   throw new Error(`BUG: FiberRuntime - ${toStringUnknown(_)} - please report an issue at https://github.com/Effect-TS/effect/issues`);
 };
 var YieldedOp = /* @__PURE__ */ Symbol.for("effect/internal/fiberRuntime/YieldedOp");
@@ -46802,7 +46878,7 @@ var FiberRuntime = class {
         return EvaluationSignalContinue;
       }
       default: {
-        return absurd(message);
+        return absurd2(message);
       }
     }
   }
@@ -47008,7 +47084,7 @@ var FiberRuntime = class {
     const cont = this.getNextSuccessCont();
     if (cont !== void 0) {
       if (!(cont._op in contOpSuccess)) {
-        absurd(cont);
+        absurd2(cont);
       }
       return contOpSuccess[cont._op](this, cont, value3);
     } else {
@@ -47021,7 +47097,7 @@ var FiberRuntime = class {
     const cont = this.getNextSuccessCont();
     if (cont !== void 0) {
       if (!(cont._op in contOpSuccess)) {
-        absurd(cont);
+        absurd2(cont);
       }
       return contOpSuccess[cont._op](this, cont, oldCur.effect_instruction_i0);
     } else {
@@ -47058,7 +47134,7 @@ var FiberRuntime = class {
           }
         }
         default: {
-          absurd(cont);
+          absurd2(cont);
         }
       }
     } else {
@@ -47184,7 +47260,7 @@ var FiberRuntime = class {
       }
       try {
         if (!("_op" in cur) || !(cur._op in this)) {
-          absurd(cur);
+          absurd2(cur);
         }
         cur = this._tracer.context(() => {
           if (getCurrentVersion() !== cur[EffectTypeId3]._V) {
@@ -47712,7 +47788,7 @@ var validateWith = /* @__PURE__ */ dual((args) => isEffect(args[1]), (self2, tha
   onSuccess: f,
   onFailure: (ca, cb) => options?.concurrent ? parallel(ca, cb) : sequential(ca, cb)
 }), options)));
-var validateFirst = /* @__PURE__ */ dual((args) => isIterable(args[0]), (elements, f, options) => flip(forEach7(elements, (a, i) => flip(f(a, i)), options)));
+var validateFirst = /* @__PURE__ */ dual((args) => isIterable(args[0]), (elements, f, options) => flip2(forEach7(elements, (a, i) => flip2(f(a, i)), options)));
 var withClockScoped = (value3) => fiberRefLocallyScopedWith(currentServices, add2(clockTag, value3));
 var withRandomScoped = (value3) => fiberRefLocallyScopedWith(currentServices, add2(randomTag, value3));
 var withConfigProviderScoped = (value3) => fiberRefLocallyScopedWith(currentServices, add2(configProviderTag, value3));
@@ -48502,7 +48578,7 @@ __export(Effect_exports, {
   firstSuccessOf: () => firstSuccessOf2,
   flatMap: () => flatMap10,
   flatten: () => flatten7,
-  flip: () => flip2,
+  flip: () => flip3,
   flipWith: () => flipWith2,
   forEach: () => forEach8,
   forever: () => forever3,
@@ -50042,7 +50118,7 @@ var as3 = as;
 var asSome2 = asSome;
 var asSomeError2 = asSomeError;
 var asVoid3 = asVoid;
-var flip2 = flip;
+var flip3 = flip2;
 var flipWith2 = flipWith;
 var map13 = map8;
 var mapAccum3 = mapAccum2;
@@ -51166,6 +51242,13 @@ var github = __toESM(require_github());
 
 // src/utils.ts
 var objectEntriesUnsafe = Object.entries;
+function tapLogTrace(message, transform2 = Function_exports.identity) {
+  return Effect_exports.tap((value3) => {
+    const transformedValue = transform2(value3);
+    const traceMessages = Array.isArray(transformedValue) ? transformedValue : [transformedValue];
+    return Effect_exports.logTrace(message, ...traceMessages);
+  });
+}
 
 // src/services/inputs.ts
 var Inputs = class extends Context_exports.Tag("Inputs")() {
@@ -51279,14 +51362,14 @@ var githubClient = Inputs.pipe(
           per_page: 10
         }),
         catch: transformToActionError("Could not list workflow runs")
-      }),
+      }).pipe(tapLogTrace("GitHub listWorkflowRuns response")),
       listJobsForWorkflowRun: (runId) => Effect_exports.tryPromise({
         try: () => octokit.rest.actions.listJobsForWorkflowRun({
           ...inputs2.workflowRepository,
           run_id: runId
         }),
         catch: transformToActionError(`Could not list jobs for workflow run ${runId}`)
-      }),
+      }).pipe(tapLogTrace(`GitHub listJobsForWorkflowRun with runId ${runId} response`)),
       compareToCurrentDeployCommit: (head5) => Effect_exports.tryPromise({
         try: () => octokit.rest.repos.compareCommitsWithBasehead({
           ...inputs2.workflowRepository,
@@ -51295,7 +51378,9 @@ var githubClient = Inputs.pipe(
         catch: transformToActionError(
           `Could not compare commits ${inputs2.deployedCommitSha}...${head5}`
         )
-      }),
+      }).pipe(
+        tapLogTrace(`GitHub compareToCurrentDeployCommit with head ${head5} response`)
+      ),
       listCommits: (sha, perPage) => Effect_exports.tryPromise({
         try: () => octokit.rest.repos.listCommits({
           ...inputs2.workflowRepository,
@@ -51303,7 +51388,11 @@ var githubClient = Inputs.pipe(
           per_page: perPage
         }),
         catch: transformToActionError(`Could not list commits for SHA ${sha}`)
-      }),
+      }).pipe(
+        tapLogTrace(
+          `GitHub listCommits with sha ${sha} and perPage ${perPage} response`
+        )
+      ),
       listPullRequestsAssociatedWithCommit: (commitSha) => Effect_exports.tryPromise({
         try: () => octokit.rest.repos.listPullRequestsAssociatedWithCommit({
           ...inputs2.workflowRepository,
@@ -51312,7 +51401,11 @@ var githubClient = Inputs.pipe(
         catch: transformToActionError(
           `Could not list pull requests associated with commit ${commitSha}`
         )
-      })
+      }).pipe(
+        tapLogTrace(
+          `GitHub listPullRequestsAssociatedWithCommit with commitSha ${commitSha} response`
+        )
+      )
     };
   })
 );
@@ -51571,7 +51664,7 @@ var linearClient = Inputs.pipe(
         catch: transformToActionError(
           `Could not get issue view for attachment URL ${url}`
         )
-      }),
+      }).pipe(tapLogTrace("Linear query IssueViewForAttachmentUrl response")),
       createComment: inputs2.isDryRun ? createCommentDryRun : createCommentLive
     };
   })
