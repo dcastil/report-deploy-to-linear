@@ -17,9 +17,7 @@ export function reportDeployedPrsToLinear(pullRequests: PullRequest[]) {
                             linearClient
                                 .getIssueViewForAttachmentUrl(pullRequest.url, commentBody)
                                 .pipe(
-                                    Effect.map(
-                                        (issueView) => issueView.data.attachmentsForURL.nodes,
-                                    ),
+                                    Effect.map((issueView) => issueView.attachmentsForURL.nodes),
                                     Effect.tap((attachments) =>
                                         Effect.logDebug(
                                             `${attachments.length} attachment${attachments.length === 1 ? '' : 's'} found for pull request ${pullRequest.url}`,

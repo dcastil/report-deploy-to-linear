@@ -69,20 +69,18 @@ export const LinearClientLive = Layer.effect(LinearClient, linearClient)
 const gql = String.raw
 
 interface IssueViewForAttachmentUrlQueryResponse {
-    data: {
-        attachmentsForURL: {
-            nodes: {
-                issue: {
-                    id: string
-                    identifier: string
-                    comments: {
-                        nodes: {
-                            id: string
-                        }[]
-                    }
+    attachmentsForURL: {
+        nodes: {
+            issue: {
+                id: string
+                identifier: string
+                comments: {
+                    nodes: {
+                        id: string
+                    }[]
                 }
-            }[]
-        }
+            }
+        }[]
     }
 }
 
