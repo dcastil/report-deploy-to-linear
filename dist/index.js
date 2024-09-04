@@ -51700,8 +51700,10 @@ function reportDeployedPrsToLinear(pullRequests) {
               (commentBody) => linearClient2.getIssueViewForAttachmentUrl(pullRequest.url, commentBody).pipe(
                 Effect_exports.map((issueView) => issueView.attachmentsForURL.nodes),
                 Effect_exports.tap(
-                  (attachments) => Effect_exports.logDebug(
-                    `${attachments.length} attachment${attachments.length === 1 ? "" : "s"} found for pull request ${pullRequest.url}`,
+                  (attachments) => attachments.length === 0 ? Effect_exports.logInfo(
+                    `No Linear attachments found for pull request ${pullRequest.url}`
+                  ) : Effect_exports.logDebug(
+                    `${attachments.length} Linear attachment${attachments.length === 1 ? "" : "s"} found for pull request ${pullRequest.url}`,
                     `Belonging to issue${attachments.length === 1 ? "" : "s"} ${attachments.map((attachment) => attachment.issue.identifier).join(", ")}`
                   )
                 ),

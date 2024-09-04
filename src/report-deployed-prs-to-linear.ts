@@ -19,10 +19,14 @@ export function reportDeployedPrsToLinear(pullRequests: PullRequest[]) {
                                 .pipe(
                                     Effect.map((issueView) => issueView.attachmentsForURL.nodes),
                                     Effect.tap((attachments) =>
-                                        Effect.logDebug(
-                                            `${attachments.length} attachment${attachments.length === 1 ? '' : 's'} found for pull request ${pullRequest.url}`,
-                                            `Belonging to issue${attachments.length === 1 ? '' : 's'} ${attachments.map((attachment) => attachment.issue.identifier).join(', ')}`,
-                                        ),
+                                        attachments.length === 0
+                                            ? Effect.logInfo(
+                                                  `No Linear attachments found for pull request ${pullRequest.url}`,
+                                              )
+                                            : Effect.logDebug(
+                                                  `${attachments.length} Linear attachment${attachments.length === 1 ? '' : 's'} found for pull request ${pullRequest.url}`,
+                                                  `Belonging to issue${attachments.length === 1 ? '' : 's'} ${attachments.map((attachment) => attachment.issue.identifier).join(', ')}`,
+                                              ),
                                     ),
                                     Effect.andThen((attachments) =>
                                         Effect.all(
