@@ -51675,6 +51675,7 @@ var issueViewForAttachmentQuery = gql`
     query IssueViewForAttachmentUrl($url: String!, $commentBody: String!) {
         attachmentsForURL(url: $url) {
             nodes {
+                metadata
                 issue {
                     id
                     identifier

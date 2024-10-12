@@ -71,6 +71,9 @@ const gql = String.raw
 interface IssueViewForAttachmentUrlQueryResponse {
     attachmentsForURL: {
         nodes: {
+            metadata: {
+                linkKind?: 'links' | 'closes' | (string & {})
+            }
             issue: {
                 id: string
                 identifier: string
@@ -88,6 +91,7 @@ const issueViewForAttachmentQuery = gql`
     query IssueViewForAttachmentUrl($url: String!, $commentBody: String!) {
         attachmentsForURL(url: $url) {
             nodes {
+                metadata
                 issue {
                     id
                     identifier
@@ -112,6 +116,9 @@ export function getLinearClientTest(client?: Partial<Effect.Effect.Success<typeo
                         attachmentsForURL: {
                             nodes: [
                                 {
+                                    metadata: {
+                                        linkKind: 'closes',
+                                    },
                                     issue: {
                                         id: '87d696f1-4467-4f35-843e-c62b31b26' + url.slice(-3),
                                         identifier: 'TEST-' + url.slice(-3),
